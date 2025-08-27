@@ -29,7 +29,7 @@ export const webhookModalDescription = [
 		type: 'string',
 		noDataExpression: true,
 		default: '',
-		placeholder: 'http://example.com/index.html',
+		placeholder: 'https://example.com/index.html',
 		description: 'The URL to make the request to',
 	},
 	// TODO: commented out until required and implemented on backend

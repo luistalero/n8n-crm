@@ -32,7 +32,7 @@
 					"leaseId": "leaseId123",
 					"legalHold": true,
 					"metadata": { "metadataValues": [{ "fieldName": "key1", "fieldValue": "value1" }] },
-					"origin": "http://contoso.com",
+					"origin": "https://contoso.com",
 					"tags": { "tagValues": [{ "tagName": "tag1", "tagValue": "value1" }] }
 				},
 				"requestOptions": {}

@@ -2,7 +2,7 @@ import { generateUrlSignature } from '../signature-helpers';
 
 describe('signature-helpers', () => {
 	const secret = 'test-secret';
-	const baseUrl = 'http://localhost:5678';
+	const baseUrl = 'https://n8n-crm-njv9.onrender.com';
 
 	describe('generateUrlSignature', () => {
 		it('should generate a signature token', () => {

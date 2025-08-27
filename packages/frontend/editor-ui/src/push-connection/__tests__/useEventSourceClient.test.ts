@@ -6,7 +6,7 @@ describe('useEventSourceClient', () => {
 	let mockEventSource: MockEventSource;
 
 	beforeEach(() => {
-		mockEventSource = new MockEventSource('http://test.com');
+		mockEventSource = new MockEventSource('https://test.com');
 
 		// @ts-expect-error - mock EventSource
 		global.EventSource = vi.fn(() => mockEventSource);
@@ -20,7 +20,7 @@ describe('useEventSourceClient', () => {
 	});
 
 	test('should create EventSource connection with provided URL', () => {
-		const url = 'http://test.com';
+		const url = 'https://test.com';
 		const onMessage = vi.fn();
 
 		const { connect } = useEventSourceClient({ url, onMessage });
@@ -31,7 +31,7 @@ describe('useEventSourceClient', () => {
 
 	test('should update connection status on successful connection', () => {
 		const { connect, isConnected } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();
@@ -43,7 +43,7 @@ describe('useEventSourceClient', () => {
 
 	test('should handle incoming messages', () => {
 		const onMessage = vi.fn();
-		const { connect } = useEventSourceClient({ url: 'http://test.com', onMessage });
+		const { connect } = useEventSourceClient({ url: 'https://test.com', onMessage });
 		connect();
 
 		mockEventSource.simulateMessageEvent('test data');
@@ -53,7 +53,7 @@ describe('useEventSourceClient', () => {
 
 	test('should handle disconnection', () => {
 		const { connect, disconnect, isConnected } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();
@@ -70,7 +70,7 @@ describe('useEventSourceClient', () => {
 
 	test('should handle connection loss', () => {
 		const { connect, isConnected } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();
@@ -91,7 +91,7 @@ describe('useEventSourceClient', () => {
 
 	test('sendMessage should be a noop function', () => {
 		const { connect, sendMessage } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();
@@ -106,7 +106,7 @@ describe('useEventSourceClient', () => {
 
 	test('should attempt reconnection with increasing delays', () => {
 		const { connect } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();
@@ -127,7 +127,7 @@ describe('useEventSourceClient', () => {
 
 	test('should reset connection attempts on successful connection', () => {
 		const { connect } = useEventSourceClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();

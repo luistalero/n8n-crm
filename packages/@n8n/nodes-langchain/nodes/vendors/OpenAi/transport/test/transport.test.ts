@@ -16,7 +16,7 @@ describe('apiRequest', () => {
 
 	it('should call requestWithAuthentication with credentials URL if one is provided', async () => {
 		mockedExecutionContext.getCredentials.mockResolvedValue({
-			url: 'http://www.test/url/v1',
+			url: 'https://www.test/url/v1',
 		});
 
 		// Act
@@ -32,7 +32,7 @@ describe('apiRequest', () => {
 			{
 				headers: { 'Content-Type': 'application/json' },
 				method: 'GET',
-				uri: 'http://www.test/url/v1/test',
+				uri: 'https://www.test/url/v1/test',
 				json: true,
 			},
 		);

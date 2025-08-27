@@ -176,7 +176,7 @@ describe('WorkflowsView', () => {
 			const projectsStore = mockedStore(useProjectsStore);
 			projectsStore.currentProject = { scopes: ['workflow:create'] } as Project;
 
-			settingsStore.settings.templates = { enabled: true, host: 'http://example.com' };
+			settingsStore.settings.templates = { enabled: true, host: 'https://example.com' };
 			const { getByTestId } = renderComponent({ pinia });
 			await waitAllPromises();
 
@@ -187,7 +187,7 @@ describe('WorkflowsView', () => {
 			const projectsStore = mockedStore(useProjectsStore);
 			projectsStore.currentProject = { scopes: ['workflow:create'] } as Project;
 
-			settingsStore.settings.templates = { enabled: true, host: 'http://example.com' };
+			settingsStore.settings.templates = { enabled: true, host: 'https://example.com' };
 			const { getByTestId } = renderComponent({ pinia });
 			await waitAllPromises();
 

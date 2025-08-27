@@ -123,7 +123,7 @@ const documentationUrl = computed(() => {
 	}
 
 	let url: URL;
-	if (docUrl.startsWith('https://') || docUrl.startsWith('http://')) {
+	if (docUrl.startsWith('https://') || docUrl.startsWith('https://')) {
 		url = new URL(docUrl);
 		if (url.hostname !== DOCS_DOMAIN) return docUrl;
 	} else {

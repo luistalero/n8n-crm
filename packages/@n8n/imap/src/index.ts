@@ -73,7 +73,7 @@ export async function connect(options: ImapSimpleOptions): Promise<ImapSimple> {
  * the different parts of the message's body. Useful for getting a simple list to iterate for the purposes of,
  * for example, finding all attachments.
  *
- * Code taken from http://stackoverflow.com/questions/25247207/how-to-read-and-save-attachments-using-node-imap
+ * Code taken from https://stackoverflow.com/questions/25247207/how-to-read-and-save-attachments-using-node-imap
  *
  * @returns {Array} a flattened array of `parts` objects that describe the structure of the different parts of the
  *  message's body

@@ -15,7 +15,7 @@ import {
 describe('Splunk, formatEntry', () => {
 	test('should format the entry correctly when doNotFormatContent is false', () => {
 		const entry = {
-			id: 'http://example.com/id/123',
+			id: 'https://example.com/id/123',
 			content: {
 				[SPLUNK.DICT]: {
 					[SPLUNK.KEY]: [
@@ -24,7 +24,7 @@ describe('Splunk, formatEntry', () => {
 					],
 				},
 			},
-			link: 'http://example.com/link',
+			link: 'https://example.com/link',
 			otherField: 'otherValue',
 		};
 
@@ -32,7 +32,7 @@ describe('Splunk, formatEntry', () => {
 			otherField: 'otherValue',
 			key1: 'value1',
 			key2: 'value2',
-			entryUrl: 'http://example.com/id/123',
+			entryUrl: 'https://example.com/id/123',
 			id: '123',
 		};
 
@@ -42,7 +42,7 @@ describe('Splunk, formatEntry', () => {
 
 	test('should format the entry correctly when doNotFormatContent is true', () => {
 		const entry = {
-			id: 'http://example.com/id/123',
+			id: 'https://example.com/id/123',
 			key1: 'value1',
 			key2: 'value2',
 		};
@@ -50,7 +50,7 @@ describe('Splunk, formatEntry', () => {
 		const expectedFormattedEntry = {
 			key1: 'value1',
 			key2: 'value2',
-			entryUrl: 'http://example.com/id/123',
+			entryUrl: 'https://example.com/id/123',
 			id: '123',
 		};
 
@@ -121,10 +121,10 @@ describe('Splunk, extractErrorDescription', () => {
 describe('Splunk, getId', () => {
 	test('should return id extracted from the id parameter if it is url', () => {
 		const executeFunctionsMock = mock<IExecuteFunctions>();
-		const endpoint = 'http://example.com/endpoint/admin';
+		const endpoint = 'https://example.com/endpoint/admin';
 
 		executeFunctionsMock.getNodeParameter.mockReturnValueOnce(endpoint);
-		const id = getId.call(executeFunctionsMock, 0, 'userId', 'http://example.com/endpoint/');
+		const id = getId.call(executeFunctionsMock, 0, 'userId', 'https://example.com/endpoint/');
 
 		expect(id).toBe('admin');
 	});

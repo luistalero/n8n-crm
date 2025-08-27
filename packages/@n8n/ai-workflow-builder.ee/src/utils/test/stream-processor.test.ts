@@ -36,7 +36,7 @@ describe('stream-processor', () => {
 								content: [
 									{ type: 'text', text: 'Part 1' },
 									{ type: 'text', text: 'Part 2' },
-									{ type: 'image', url: 'http://example.com/image.png' },
+									{ type: 'image', url: 'https://example.com/image.png' },
 								],
 							},
 						],

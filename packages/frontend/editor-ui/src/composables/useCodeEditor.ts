@@ -269,7 +269,7 @@ export const useCodeEditor = <L extends CodeNodeLanguageOption>({
 			drawSelection(),
 			foldGutter({
 				markerDOM: (open) => {
-					const svgNS = 'http://www.w3.org/2000/svg';
+					const svgNS = 'https://www.w3.org/2000/svg';
 					const wrapper = document.createElement('div');
 					wrapper.classList.add('cm-fold-marker');
 					const svgElement = document.createElementNS(svgNS, 'svg');

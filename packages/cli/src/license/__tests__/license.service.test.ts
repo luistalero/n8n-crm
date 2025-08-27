@@ -115,7 +115,7 @@ describe('LicenseService', () => {
 				userId: '123',
 				email: 'test@ema.il',
 				instanceId: '123',
-				instanceUrl: 'http://localhost',
+				instanceUrl: 'https://localhost',
 				licenseType: 'community-registered',
 			});
 
@@ -134,7 +134,7 @@ describe('LicenseService', () => {
 					userId: '123',
 					email: 'test@ema.il',
 					instanceId: '123',
-					instanceUrl: 'http://localhost',
+					instanceUrl: 'https://localhost',
 					licenseType: 'community-registered',
 				}),
 			).rejects.toThrowError('Failed');

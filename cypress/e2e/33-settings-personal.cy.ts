@@ -2,7 +2,7 @@ import { errorToast, successToast } from '../pages/notifications';
 
 const INVALID_NAMES = [
 	'https://n8n.io',
-	'http://n8n.io',
+	'https://n8n.io',
 	'www.n8n.io',
 	'n8n.io',
 	'n8n.бг',

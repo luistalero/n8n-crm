@@ -51,7 +51,7 @@ describe('JsTaskRunner', () => {
 				...defaultConfig.baseRunnerConfig,
 				grantToken: 'grantToken',
 				maxConcurrency: 1,
-				taskBrokerUri: 'http://localhost',
+				taskBrokerUri: 'https://localhost',
 				taskTimeout: 60,
 				...baseRunnerOpts,
 			},
@@ -283,8 +283,8 @@ describe('JsTaskRunner', () => {
 					{
 						id: 'exec-id',
 						mode: 'test',
-						resumeFormUrl: 'http://formWaitingBaseUrl/exec-id',
-						resumeUrl: 'http://webhookWaitingBaseUrl/exec-id',
+						resumeFormUrl: 'https://formWaitingBaseUrl/exec-id',
+						resumeUrl: 'https://webhookWaitingBaseUrl/exec-id',
 						customData: {
 							get: expect.any(Function),
 							getAll: expect.any(Function),
@@ -400,7 +400,7 @@ describe('JsTaskRunner', () => {
 			});
 
 			it("should not expose task runner's env variables even if no env state is received", async () => {
-				process.env.N8N_RUNNERS_TASK_BROKER_URI = 'http://127.0.0.1:5679';
+				process.env.N8N_RUNNERS_TASK_BROKER_URI = 'https://127.0.0.1:5679';
 				const outcome = await execTaskWithParams({
 					task: newTaskParamsWithSettings({
 						code: 'return { val: $env.N8N_RUNNERS_TASK_BROKER_URI }',
@@ -659,8 +659,8 @@ describe('JsTaskRunner', () => {
 				},
 				{
 					method: 'helpers.httpRequest',
-					invocation: "helpers.httpRequest({ method: 'GET', url: 'http://localhost' })",
-					expectedParams: [{ method: 'GET', url: 'http://localhost' }],
+					invocation: "helpers.httpRequest({ method: 'GET', url: 'https://localhost' })",
+					expectedParams: [{ method: 'GET', url: 'https://localhost' }],
 				},
 			];
 

@@ -133,7 +133,7 @@ export class S3 implements INodeType {
 						const body: IDataObject = {
 							CreateBucketConfiguration: {
 								$: {
-									xmlns: 'http://s3.amazonaws.com/doc/2006-03-01/',
+									xmlns: 'https://s3.amazonaws.com/doc/2006-03-01/',
 								},
 							},
 						};
@@ -359,7 +359,7 @@ export class S3 implements INodeType {
 							const body: IDataObject = {
 								Delete: {
 									$: {
-										xmlns: 'http://s3.amazonaws.com/doc/2006-03-01/',
+										xmlns: 'https://s3.amazonaws.com/doc/2006-03-01/',
 									},
 									Object: [],
 								},

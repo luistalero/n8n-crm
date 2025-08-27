@@ -43,7 +43,7 @@ describe('Test Telegram, message => sendAndWait', () => {
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce('my message');
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce('my subject');
 		mockExecuteFunctions.getSignedResumeUrl.mockReturnValue(
-			'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+			'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 		);
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce({}); // approvalOptions
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce({}); // options
@@ -67,7 +67,7 @@ describe('Test Telegram, message => sendAndWait', () => {
 					[
 						{
 							text: 'Approve',
-							url: 'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+							url: 'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 						},
 					],
 				],

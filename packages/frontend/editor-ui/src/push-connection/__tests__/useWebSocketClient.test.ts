@@ -103,7 +103,7 @@ describe('useWebSocketClient', () => {
 
 	test('should attempt reconnection with increasing delays', () => {
 		const { connect } = useWebSocketClient({
-			url: 'http://test.com',
+			url: 'https://test.com',
 			onMessage: vi.fn(),
 		});
 		connect();

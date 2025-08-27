@@ -231,7 +231,7 @@
 								"action": "open_url",
 								"button_text": "community ?",
 								"type": "action",
-								"url": "http://community.n8n.io"
+								"url": "https://community.n8n.io"
 							}
 						]
 					}

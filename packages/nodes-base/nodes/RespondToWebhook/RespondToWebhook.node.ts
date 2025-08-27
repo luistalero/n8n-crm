@@ -163,7 +163,7 @@ export class RespondToWebhook implements INodeType {
 					},
 				},
 				default: '',
-				placeholder: 'e.g. http://www.n8n.io',
+				placeholder: 'e.g. https://www.n8n.io',
 				description: 'The URL to redirect to',
 				validateType: 'url',
 			},

@@ -26,7 +26,7 @@ import type { SetupProps, TestServer } from '../types';
 /**
  * Plugin to prefix a path segment into a request URL pathname.
  *
- * Example: http://127.0.0.1:62100/me/password → http://127.0.0.1:62100/rest/me/password
+ * Example: https://127.0.0.1:62100/me/password → https://127.0.0.1:62100/rest/me/password
  */
 function prefix(pathSegment: string) {
 	return async function (request: superagent.SuperAgentRequest) {

@@ -194,7 +194,7 @@ describe('KafkaTrigger Node', () => {
 					topic: 'test-topic',
 					groupId: 'test-group',
 					useSchemaRegistry: true,
-					schemaRegistryUrl: 'http://localhost:8081',
+					schemaRegistryUrl: 'https://localhost:8081',
 					options: { parallelProcessing: true },
 				},
 			},
@@ -212,7 +212,7 @@ describe('KafkaTrigger Node', () => {
 		});
 
 		expect(SchemaRegistry).toHaveBeenCalledWith({
-			host: 'http://localhost:8081',
+			host: 'https://localhost:8081',
 		});
 		expect(mockRegistryDecode).toHaveBeenCalledWith(Buffer.from('test-message'));
 		expect(emit).toHaveBeenCalledWith([

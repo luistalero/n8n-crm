@@ -6,28 +6,28 @@ export const xmlFileInfo: XMLFileInfo = {
 <schema
     targetNamespace="urn:oasis:names:tc:SAML:2.0:metadata"
     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-    xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"
+    xmlns:ds="https://www.w3.org/2000/09/xmldsig#"
+    xmlns:xenc="https://www.w3.org/2001/04/xmlenc#"
     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns="https://www.w3.org/2001/XMLSchema"
     elementFormDefault="unqualified"
     attributeFormDefault="unqualified"
     blockDefault="substitution"
     version="2.0">
-    <import namespace="http://www.w3.org/2000/09/xmldsig#"
+    <import namespace="https://www.w3.org/2000/09/xmldsig#"
         schemaLocation="xmldsig-core-schema.xsd"/>
-    <import namespace="http://www.w3.org/2001/04/xmlenc#"
+    <import namespace="https://www.w3.org/2001/04/xmlenc#"
         schemaLocation="xenc-schema.xsd"/>
     <import namespace="urn:oasis:names:tc:SAML:2.0:assertion"
         schemaLocation="saml-schema-assertion-2.0.xsd"/>
-    <import namespace="http://www.w3.org/XML/1998/namespace"
+    <import namespace="https://www.w3.org/XML/1998/namespace"
         schemaLocation="xml.xsd"/>
-    <import namespace="http://docs.oasis-open.org/wsfed/authorization/200706"
+    <import namespace="https://docs.oasis-open.org/wsfed/authorization/200706"
         schemaLocation="ws-federation.xsd"/>
     <annotation>
         <documentation>
             Document identifier: saml-schema-metadata-2.0
-            Location: http://docs.oasis-open.org/security/saml/v2.0/
+            Location: https://docs.oasis-open.org/security/saml/v2.0/
             Revision history:
               V2.0 (March, 2005):
                 Schema for SAML metadata, first published in SAML 2.0.

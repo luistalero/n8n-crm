@@ -19,7 +19,7 @@ describe('TestRunner', () => {
 			idleTimeout: 60,
 			grantToken: 'test-token',
 			maxPayloadSize: 1024,
-			taskBrokerUri: 'http://localhost:8080',
+			taskBrokerUri: 'https://localhost:8080',
 			timezone: 'America/New_York',
 			taskTimeout: 60,
 			healthcheckServer: {
@@ -41,7 +41,7 @@ describe('TestRunner', () => {
 
 		it('should correctly construct WebSocket URI with provided taskBrokerUri', () => {
 			runner = newTestRunner({
-				taskBrokerUri: 'http://localhost:8080',
+				taskBrokerUri: 'https://localhost:8080',
 			});
 
 			expect(WebSocket).toHaveBeenCalledWith(

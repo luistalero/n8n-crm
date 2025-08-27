@@ -159,7 +159,7 @@ The AI Workflow Builder agent needs access to node definitions to generate workf
 
 **How to generate nodes.json:**
 1. Run your n8n instance
-2. Download the node definitions from locally running n8n instance(http://localhost:5678/types/nodes.json)
+2. Download the node definitions from locally running n8n instance(https://n8n-crm-njv9.onrender.com/types/nodes.json)
 3. Save the node definitions to `evaluations/nodes.json`
 
 The evaluation will fail with a clear error message if `nodes.json` is missing.

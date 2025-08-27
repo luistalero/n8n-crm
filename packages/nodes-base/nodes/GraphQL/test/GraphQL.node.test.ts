@@ -69,7 +69,7 @@ describe('GraphQL Node', () => {
 		const credentials = {
 			oAuth2Api: {
 				scope: '',
-				accessTokenUrl: 'http://test/token',
+				accessTokenUrl: 'https://test/token',
 				clientId: 'dummy_client_id',
 				clientSecret: 'dummy_client_secret',
 				oauthTokenData: {
@@ -78,7 +78,7 @@ describe('GraphQL Node', () => {
 				},
 			},
 		};
-		const baseUrl = 'http://test';
+		const baseUrl = 'https://test';
 		nock(baseUrl)
 			.post('/graphql', '{"query":"query { foo }","variables":{},"operationName":null}')
 			.reply(401, {

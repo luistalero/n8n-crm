@@ -4,12 +4,12 @@ export const xmlFileInfo: XMLFileInfo = {
 	fileName: 'xml.xsd',
 	contents: `<?xml version='1.0'?>
 <!DOCTYPE xs:schema PUBLIC "-//W3C//DTD XMLSCHEMA 200102//EN" "XMLSchema.dtd" >
-<xs:schema targetNamespace="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
+<xs:schema targetNamespace="https://www.w3.org/XML/1998/namespace" xmlns:xs="https://www.w3.org/2001/XMLSchema" xml:lang="en">
 
  <xs:annotation>
   <xs:documentation>
-   See http://www.w3.org/XML/1998/namespace.html and
-   http://www.w3.org/TR/REC-xml for information about this namespace.
+   See https://www.w3.org/XML/1998/namespace.html and
+   https://www.w3.org/TR/REC-xml for information about this namespace.
 
     This schema document describes the XML namespace, in a form
     suitable for import by other schema documents.  
@@ -59,7 +59,7 @@ export const xmlFileInfo: XMLFileInfo = {
         for the XML namespace, e.g. as follows:
         &lt;schema . . .>
          . . .
-         &lt;import namespace="http://www.w3.org/XML/1998/namespace"
+         &lt;import namespace="https://www.w3.org/XML/1998/namespace"
                     schemaLocation="xml.xsd"/>
 
         Subsequently, qualified reference to any of the attributes
@@ -76,16 +76,16 @@ export const xmlFileInfo: XMLFileInfo = {
  <xs:annotation>
   <xs:documentation>In keeping with the XML Schema WG's standard versioning
    policy, this schema document will persist at
-   http://www.w3.org/2001/03/xml.xsd.
+   https://www.w3.org/2001/03/xml.xsd.
    At the date of issue it can also be found at
-   http://www.w3.org/2001/xml.xsd.
+   https://www.w3.org/2001/xml.xsd.
    The schema document at that URI may however change in the future,
    in order to remain compatible with the latest version of XML Schema
    itself.  In other words, if the XML Schema namespace changes, the version
    of this document at
-   http://www.w3.org/2001/xml.xsd will change
+   https://www.w3.org/2001/xml.xsd will change
    accordingly; the version at
-   http://www.w3.org/2001/03/xml.xsd will not change.
+   https://www.w3.org/2001/03/xml.xsd will not change.
   </xs:documentation>
  </xs:annotation>
 
@@ -107,7 +107,7 @@ export const xmlFileInfo: XMLFileInfo = {
 
  <xs:attribute name="base" type="xs:anyURI">
   <xs:annotation>
-   <xs:documentation>See http://www.w3.org/TR/xmlbase/ for
+   <xs:documentation>See https://www.w3.org/TR/xmlbase/ for
                      information about this attribute.</xs:documentation>
   </xs:annotation>
  </xs:attribute>

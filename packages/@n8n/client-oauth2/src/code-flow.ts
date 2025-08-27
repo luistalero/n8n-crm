@@ -15,7 +15,7 @@ interface CodeFlowBody {
 /**
  * Support authorization code OAuth 2.0 grant.
  *
- * Reference: http://tools.ietf.org/html/rfc6749#section-4.1
+ * Reference: https://tools.ietf.org/html/rfc6749#section-4.1
  */
 export class CodeFlow {
 	constructor(private client: ClientOAuth2) {}

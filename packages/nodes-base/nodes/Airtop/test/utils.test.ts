@@ -372,11 +372,11 @@ describe('Test Airtop utils', () => {
 		it('should validate proxyUrl', () => {
 			const nodeParameters = {
 				proxy: 'proxyUrl',
-				proxyUrl: 'http://example.com',
+				proxyUrl: 'https://example.com',
 			};
 
 			const result = validateProxy.call(createMockExecuteFunction(nodeParameters), 0);
-			expect(result).toEqual({ proxy: 'http://example.com' });
+			expect(result).toEqual({ proxy: 'https://example.com' });
 		});
 
 		it('should throw error for empty proxyUrl', () => {

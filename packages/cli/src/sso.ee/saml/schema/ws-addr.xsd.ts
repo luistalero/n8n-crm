@@ -5,7 +5,7 @@ export const xmlFileInfo: XMLFileInfo = {
 	contents: `<?xml version="1.0" encoding="utf-8"?>
 <!--
     W3C XML Schema defined in the Web Services Addressing 1.0 specification
-    http://www.w3.org/TR/ws-addr-core
+    https://www.w3.org/TR/ws-addr-core
 
    Copyright © 2005 World Wide Web Consortium,
 
@@ -15,11 +15,11 @@ export const xmlFileInfo: XMLFileInfo = {
    it will be useful, but WITHOUT ANY WARRANTY; without even the implied
    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-   [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+   [1] https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 
    $Id: ws-addr.xsd,v 1.2 2008/07/23 13:38:16 plehegar Exp $
 -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.w3.org/2005/08/addressing" targetNamespace="http://www.w3.org/2005/08/addressing" blockDefault="#all" elementFormDefault="qualified" finalDefault="" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" xmlns:tns="https://www.w3.org/2005/08/addressing" targetNamespace="https://www.w3.org/2005/08/addressing" blockDefault="#all" elementFormDefault="qualified" finalDefault="" attributeFormDefault="unqualified">
 	
 	<!-- Constructs from the WS-Addressing Core -->
 
@@ -55,7 +55,7 @@ export const xmlFileInfo: XMLFileInfo = {
 	<xs:complexType name="RelatesToType" mixed="false">
 		<xs:simpleContent>
 			<xs:extension base="xs:anyURI">
-				<xs:attribute name="RelationshipType" type="tns:RelationshipTypeOpenEnum" use="optional" default="http://www.w3.org/2005/08/addressing/reply"/>
+				<xs:attribute name="RelationshipType" type="tns:RelationshipTypeOpenEnum" use="optional" default="https://www.w3.org/2005/08/addressing/reply"/>
 				<xs:anyAttribute namespace="##other" processContents="lax"/>
 			</xs:extension>
 		</xs:simpleContent>
@@ -67,7 +67,7 @@ export const xmlFileInfo: XMLFileInfo = {
 	
 	<xs:simpleType name="RelationshipType">
 		<xs:restriction base="xs:anyURI">
-			<xs:enumeration value="http://www.w3.org/2005/08/addressing/reply"/>
+			<xs:enumeration value="https://www.w3.org/2005/08/addressing/reply"/>
 		</xs:restriction>
 	</xs:simpleType>
 	

@@ -3,7 +3,7 @@ import { createPage, getSanitizedInitialMessages, getSanitizedI18nConfig } from 
 describe('ChatTrigger Templates Security', () => {
 	const defaultParams = {
 		instanceId: 'test-instance',
-		webhookUrl: 'http://test.com/webhook',
+		webhookUrl: 'https://test.com/webhook',
 		showWelcomeScreen: false,
 		loadPreviousSession: 'notSupported' as const,
 		i18n: {

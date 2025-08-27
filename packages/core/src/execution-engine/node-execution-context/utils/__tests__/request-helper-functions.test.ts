@@ -873,9 +873,9 @@ describe('Request Helper Functions', () => {
 
 	describe('getAgentWithProxy', () => {
 		const baseUrlHttps = 'https://example.com';
-		const baseUrlHttp = 'http://example.com';
-		const proxyUrlHttps = 'http://proxy-for-https.com:8080/';
-		const proxyUrlHttp = 'http://proxy-for-http.com:8080/';
+		const baseUrlHttp = 'https://example.com';
+		const proxyUrlHttps = 'https://proxy-for-https.com:8080/';
+		const proxyUrlHttp = 'https://proxy-for-http.com:8080/';
 
 		test('should return a regular HTTP agent when no proxy is set', async () => {
 			const { agent, protocol } = getAgentWithProxy({

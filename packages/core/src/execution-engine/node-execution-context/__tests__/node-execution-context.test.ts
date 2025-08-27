@@ -378,7 +378,7 @@ describe('NodeExecutionContext', () => {
 				}),
 				mock<IWorkflowExecuteAdditionalData>({
 					executionId: '123',
-					webhookWaitingBaseUrl: 'http://localhost/waiting-webhook',
+					webhookWaitingBaseUrl: 'https://localhost/waiting-webhook',
 				}),
 				mode,
 				{
@@ -392,7 +392,7 @@ describe('NodeExecutionContext', () => {
 			const result = testContext.getSignedResumeUrl();
 
 			expect(result).toBe(
-				'http://localhost/waiting-webhook/123/node456?signature=8e48dfd1107c1a736f70e7399493ffc50a2e8edd44f389c5f9c058da961682e7',
+				'https://localhost/waiting-webhook/123/node456?signature=8e48dfd1107c1a736f70e7399493ffc50a2e8edd44f389c5f9c058da961682e7',
 			);
 		});
 
@@ -400,7 +400,7 @@ describe('NodeExecutionContext', () => {
 			const result = testContext.getSignedResumeUrl({ approved: 'true' });
 
 			expect(result).toBe(
-				'http://localhost/waiting-webhook/123/node456?approved=true&signature=11c5efc97a0d6f2ea9045dba6e397596cba29dc24adb44a9ebd3d1272c991e9b',
+				'https://localhost/waiting-webhook/123/node456?approved=true&signature=11c5efc97a0d6f2ea9045dba6e397596cba29dc24adb44a9ebd3d1272c991e9b',
 			);
 		});
 	});

@@ -26,7 +26,7 @@ OFFER_VALIDITY_LATENCY_BUFFER = 0.1  # 100ms
 EXECUTOR_USER_OUTPUT_KEY = "__n8n_internal_user_output__"
 
 # Broker
-DEFAULT_TASK_BROKER_URI = "http://127.0.0.1:5679"
+DEFAULT_TASK_BROKER_URI = "https://127.0.0.1:5679"
 TASK_BROKER_WS_PATH = "/runners/_ws"
 
 # Env vars

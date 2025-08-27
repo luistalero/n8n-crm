@@ -12,7 +12,7 @@
 		{
 			"parameters": {
 				"authentication": "oAuth2",
-				"endpoint": "http://test/graphql",
+				"endpoint": "https://test/graphql",
 				"requestFormat": "json",
 				"query": "query { foo }"
 			},

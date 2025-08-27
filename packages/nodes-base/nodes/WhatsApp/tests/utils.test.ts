@@ -32,12 +32,12 @@ describe('createMessage', () => {
 			{
 				label: 'Yes',
 				style: 'primary',
-				url: 'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+				url: 'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 			},
 			{
 				label: 'No',
 				style: 'secondary',
-				url: 'http://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
+				url: 'https://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
 			},
 		],
 	};
@@ -79,7 +79,7 @@ describe('createMessage', () => {
 				{
 					label: 'Confirm',
 					style: '',
-					url: 'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+					url: 'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 				},
 			],
 		};

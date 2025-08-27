@@ -52,7 +52,7 @@ export const baseUrlPrompt = async () =>
 			validate: (value) => {
 				if (!value) return;
 
-				if (!value.startsWith('https://') && !value.startsWith('http://')) {
+				if (!value.startsWith('https://') && !value.startsWith('https://')) {
 					return 'Base URL must start with http(s)://';
 				}
 

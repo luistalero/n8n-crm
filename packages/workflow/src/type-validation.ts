@@ -259,7 +259,7 @@ export const getValueDescription = <T>(value: T): string => {
 
 export const tryToParseUrl = (value: unknown): string => {
 	if (typeof value === 'string' && !value.includes('://')) {
-		value = `http://${value}`;
+		value = `https://${value}`;
 	}
 	const urlPattern = /^(https?|ftp|file):\/\/\S+|www\.\S+/;
 	if (!urlPattern.test(String(value))) {

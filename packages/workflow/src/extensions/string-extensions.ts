@@ -634,7 +634,7 @@ isDomain.doc = {
 	docURL: 'https://docs.n8n.io/code/builtin/data-transformation-functions/strings/#string-isDomain',
 	examples: [
 		{ example: '"n8n.io".isDomain()', evaluated: 'true' },
-		{ example: '"http://n8n.io".isDomain()', evaluated: 'false' },
+		{ example: '"https://n8n.io".isDomain()', evaluated: 'false' },
 		{ example: '"hello".isDomain()', evaluated: 'false' },
 	],
 };
@@ -744,7 +744,7 @@ extractDomain.doc = {
 		'https://docs.n8n.io/code/builtin/data-transformation-functions/strings/#string-extractDomain',
 	examples: [
 		{ example: '"me@example.com".extractDomain()', evaluated: "'example.com'" },
-		{ example: '"http://n8n.io/workflows".extractDomain()', evaluated: "'n8n.io'" },
+		{ example: '"https://n8n.io/workflows".extractDomain()', evaluated: "'n8n.io'" },
 		{
 			example: '"It\'s me@example.com".extractEmail().extractDomain()',
 			evaluated: "'example.com'",
@@ -760,7 +760,7 @@ extractUrl.doc = {
 	returnType: 'string',
 	docURL:
 		'https://docs.n8n.io/code/builtin/data-transformation-functions/strings/#string-extractUrl',
-	examples: [{ example: '"Check out http://n8n.io".extractUrl()', evaluated: "'http://n8n.io'" }],
+	examples: [{ example: '"Check out https://n8n.io".extractUrl()', evaluated: "'https://n8n.io'" }],
 };
 
 extractUrlPath.doc = {
@@ -772,9 +772,9 @@ extractUrlPath.doc = {
 	docURL:
 		'https://docs.n8n.io/code/builtin/data-transformation-functions/strings/#string-extractUrlPath',
 	examples: [
-		{ example: '"http://n8n.io/workflows".extractUrlPath()', evaluated: "'/workflows'" },
+		{ example: '"https://n8n.io/workflows".extractUrlPath()', evaluated: "'/workflows'" },
 		{
-			example: '"Check out http://n8n.io/workflows".extractUrl().extractUrlPath()',
+			example: '"Check out https://n8n.io/workflows".extractUrl().extractUrlPath()',
 			evaluated: "'/workflows'",
 		},
 	],

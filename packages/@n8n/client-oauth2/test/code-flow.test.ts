@@ -155,7 +155,7 @@ describe('CodeFlow', () => {
 				const token = await githubAuth.code.getToken(uri);
 				const requestOptions = token.sign({
 					method: 'GET',
-					url: 'http://api.github.com/user',
+					url: 'https://api.github.com/user',
 				});
 				expect(requestOptions.headers?.Authorization).toEqual(`Bearer ${config.accessToken}`);
 			});

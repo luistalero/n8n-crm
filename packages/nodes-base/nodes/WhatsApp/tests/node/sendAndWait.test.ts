@@ -40,7 +40,7 @@ describe('Test WhatsApp Business Cloud, sendAndWait operation', () => {
 		mockExecuteFunctions.getInstanceId.mockReturnValue('instanceId');
 
 		mockExecuteFunctions.getSignedResumeUrl.mockReturnValue(
-			'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+			'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 		);
 
 		const result = await whatsApp.customOperations.message.sendAndWait.call(mockExecuteFunctions);

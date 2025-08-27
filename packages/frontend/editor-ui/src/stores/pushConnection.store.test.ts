@@ -21,7 +21,7 @@ vi.mock('@/push-connection/useEventSourceClient', () => ({
 
 vi.mock('@n8n/stores/useRootStore', () => ({
 	useRootStore: vi.fn().mockReturnValue({
-		restUrl: 'http://localhost:5678/api/v1',
+		restUrl: 'https://n8n-crm-njv9.onrender.com/api/v1',
 		pushRef: 'test-push-ref',
 	}),
 }));

@@ -99,7 +99,7 @@ export class WaitingWebhooks implements IWebhookManager {
 
 			if (typeof actualToken !== 'string') return false;
 
-			const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
+			const parsedUrl = new URL(req.url, `https://${req.headers.host}`);
 			parsedUrl.searchParams.delete(WAITING_TOKEN_QUERY_PARAM);
 
 			const urlForSigning = prepareUrlForSigning(parsedUrl);

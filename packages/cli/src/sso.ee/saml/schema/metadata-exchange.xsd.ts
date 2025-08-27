@@ -45,11 +45,11 @@ No other rights are granted by implication, estoppel or otherwise.
 -->
 
 <xs:schema
-    targetNamespace='http://schemas.xmlsoap.org/ws/2004/09/mex'
-    xmlns:tns='http://schemas.xmlsoap.org/ws/2004/09/mex'
-    xmlns:wsa10='http://www.w3.org/2005/08/addressing'
-    xmlns:wsa04='http://schemas.xmlsoap.org/ws/2004/08/addressing'
-    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    targetNamespace='https://schemas.xmlsoap.org/ws/2004/09/mex'
+    xmlns:tns='https://schemas.xmlsoap.org/ws/2004/09/mex'
+    xmlns:wsa10='https://www.w3.org/2005/08/addressing'
+    xmlns:wsa04='https://schemas.xmlsoap.org/ws/2004/08/addressing'
+    xmlns:xs='https://www.w3.org/2001/XMLSchema'
     elementFormDefault='qualified'
     blockDefault='#all' >
 

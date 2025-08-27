@@ -118,7 +118,7 @@ describe('handleFormRedirectionCase', () => {
 	test('should return data unchanged if start node is WAIT_NODE_TYPE with resume not equal to form', () => {
 		const data: IWebhookResponseCallbackData = {
 			responseCode: 302,
-			headers: { location: 'http://example.com' },
+			headers: { location: 'https://example.com' },
 		};
 		const workflowStartNode = mock<INode>({
 			type: WAIT_NODE_TYPE,
@@ -131,7 +131,7 @@ describe('handleFormRedirectionCase', () => {
 	test('should modify data if start node type matches and responseCode is a redirect', () => {
 		const data: IWebhookResponseCallbackData = {
 			responseCode: 302,
-			headers: { location: 'http://example.com' },
+			headers: { location: 'https://example.com' },
 		};
 		const workflowStartNode = mock<INode>({
 			type: FORM_NODE_TYPE,
@@ -139,7 +139,7 @@ describe('handleFormRedirectionCase', () => {
 		});
 		const result = handleFormRedirectionCase(data, workflowStartNode);
 		expect(result.responseCode).toBe(200);
-		expect(result.data).toEqual({ redirectURL: 'http://example.com' });
+		expect(result.data).toEqual({ redirectURL: 'https://example.com' });
 		expect((result?.headers as IDataObject)?.location).toBeUndefined();
 	});
 

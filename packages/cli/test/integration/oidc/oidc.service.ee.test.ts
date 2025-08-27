@@ -50,7 +50,7 @@ describe('OIDC service', () => {
 			expect(oidcService.getRedactedConfig()).toEqual({
 				clientId: '',
 				clientSecret: OIDC_CLIENT_SECRET_REDACTED_VALUE,
-				discoveryEndpoint: 'http://n8n.io/not-set',
+				discoveryEndpoint: 'https://n8n.io/not-set',
 				loginEnabled: false,
 			});
 		});
@@ -60,7 +60,7 @@ describe('OIDC service', () => {
 			expect(config).toEqual({
 				clientId: '',
 				clientSecret: '',
-				discoveryEndpoint: new URL('http://n8n.io/not-set'),
+				discoveryEndpoint: new URL('https://n8n.io/not-set'),
 				loginEnabled: false,
 			});
 		});
@@ -147,7 +147,7 @@ describe('OIDC service', () => {
 			{
 				issuer: 'https://example.com/auth/realms/n8n',
 				client_id: 'test-client-id',
-				redirect_uris: ['http://n8n.io/sso/oidc/callback'],
+				redirect_uris: ['https://n8n.io/sso/oidc/callback'],
 				response_types: ['code'],
 				scopes: ['openid', 'profile', 'email'],
 				authorization_endpoint: 'https://example.com/auth',
@@ -161,7 +161,7 @@ describe('OIDC service', () => {
 		expect(authUrl.pathname).toEqual('/auth');
 		expect(authUrl.searchParams.get('client_id')).toEqual('test-client-id');
 		expect(authUrl.searchParams.get('redirect_uri')).toEqual(
-			'http://localhost:5678/rest/sso/oidc/callback',
+			'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback',
 		);
 		expect(authUrl.searchParams.get('response_type')).toEqual('code');
 		expect(authUrl.searchParams.get('scope')).toEqual('openid email profile');
@@ -170,7 +170,7 @@ describe('OIDC service', () => {
 	describe('loginUser', () => {
 		it('should handle new user login with valid callback URL', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -214,7 +214,7 @@ describe('OIDC service', () => {
 
 		it('should handle existing user login with valid callback URL', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -250,7 +250,7 @@ describe('OIDC service', () => {
 
 		it('should sign up the user if user already exists out of OIDC system', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -286,7 +286,7 @@ describe('OIDC service', () => {
 
 		it('should sign in user if OIDC Idp does not have email verified', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -322,7 +322,7 @@ describe('OIDC service', () => {
 
 		it('should throw `BadRequestError` if OIDC Idp does not provide an email', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -355,7 +355,7 @@ describe('OIDC service', () => {
 
 		it('should throw `BadRequestError` if OIDC Idp provides an invalid email format', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -396,7 +396,7 @@ describe('OIDC service', () => {
 			['double@@domain.com'],
 		])('should throw `BadRequestError` for invalid email <%s>', async (invalidEmail) => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &
@@ -428,7 +428,7 @@ describe('OIDC service', () => {
 
 		it('should throw `ForbiddenError` if OIDC token does not provide claims', async () => {
 			const callbackUrl = new URL(
-				'http://localhost:5678/rest/sso/oidc/callback?code=valid-code&state=valid-state',
+				'https://n8n-crm-njv9.onrender.com/rest/sso/oidc/callback?code=valid-code&state=valid-state',
 			);
 
 			const mockTokens: mocked_oidc_client.TokenEndpointResponse &

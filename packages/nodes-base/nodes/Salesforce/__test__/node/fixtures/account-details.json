@@ -56,7 +56,7 @@
 	"Phone": "(123) 123-4567",
 	"Fax": "(123) 123-4567",
 	"AccountNumber": "AB12345",
-	"Website": "http://foo.com",
+	"Website": "https://foo.com",
 	"PhotoUrl": "/services/images/photo/id1",
 	"Sic": "6576",
 	"Industry": "Electronics",

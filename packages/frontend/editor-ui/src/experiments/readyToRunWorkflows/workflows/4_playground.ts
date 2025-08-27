@@ -221,7 +221,7 @@ export const PLAYGROUND_4: WorkflowDataCreate = {
 		},
 		{
 			parameters: {
-				url: '=http://numbersapi.com/{{ $json["current month"] }}/{{ $json["current day"] }}/date?json',
+				url: '=https://numbersapi.com/{{ $json["current month"] }}/{{ $json["current day"] }}/date?json',
 				options: {},
 			},
 			type: 'n8n-nodes-base.httpRequest',

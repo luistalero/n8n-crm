@@ -22,7 +22,7 @@ export async function hackerNewsApiRequest(
 	const options: IRequestOptions = {
 		method,
 		qs,
-		uri: `http://hn.algolia.com/api/v1/${endpoint}`,
+		uri: `https://hn.algolia.com/api/v1/${endpoint}`,
 		json: true,
 	};
 

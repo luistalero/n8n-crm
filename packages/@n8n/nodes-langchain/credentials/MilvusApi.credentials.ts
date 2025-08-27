@@ -18,7 +18,7 @@ export class MilvusApi implements ICredentialType {
 			name: 'baseUrl',
 			required: true,
 			type: 'string',
-			default: 'http://localhost:19530',
+			default: 'https://localhost:19530',
 		},
 		{
 			displayName: 'Username',

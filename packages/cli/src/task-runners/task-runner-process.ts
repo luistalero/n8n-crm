@@ -102,7 +102,7 @@ export class TaskRunnerProcess extends TypedEmitter<TaskRunnerProcessEventMap> {
 
 		const grantToken = await this.authService.createGrantToken();
 
-		const taskBrokerUri = `http://127.0.0.1:${this.runnerConfig.port}`;
+		const taskBrokerUri = `https://127.0.0.1:${this.runnerConfig.port}`;
 		this.process = this.startNode(grantToken, taskBrokerUri);
 
 		forwardToLogger(this.logger, this.process, '[Task Runner]: ');

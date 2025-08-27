@@ -14,7 +14,7 @@ interface CredentialsFlowBody {
 /**
  * Support client credentials OAuth 2.0 grant.
  *
- * Reference: http://tools.ietf.org/html/rfc6749#section-4.4
+ * Reference: https://tools.ietf.org/html/rfc6749#section-4.4
  */
 export class CredentialsFlow {
 	constructor(private client: ClientOAuth2) {}

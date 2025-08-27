@@ -41,7 +41,7 @@ type OidcRuntimeConfig = Pick<OidcConfigDto, 'clientId' | 'clientSecret' | 'logi
 
 const DEFAULT_OIDC_RUNTIME_CONFIG: OidcRuntimeConfig = {
 	...DEFAULT_OIDC_CONFIG,
-	discoveryEndpoint: new URL('http://n8n.io/not-set'),
+	discoveryEndpoint: new URL('https://n8n.io/not-set'),
 };
 
 @Service()

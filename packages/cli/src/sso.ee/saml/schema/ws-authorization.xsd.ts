@@ -25,12 +25,12 @@ INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN
 MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
   -->
 
-<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
-       xmlns:xenc='http://www.w3.org/2001/04/xmlenc#'    
-		   xmlns:tns='http://docs.oasis-open.org/wsfed/authorization/200706'
-		   targetNamespace='http://docs.oasis-open.org/wsfed/authorization/200706'
+<xs:schema xmlns:xs='https://www.w3.org/2001/XMLSchema'
+       xmlns:xenc='https://www.w3.org/2001/04/xmlenc#'    
+		   xmlns:tns='https://docs.oasis-open.org/wsfed/authorization/200706'
+		   targetNamespace='https://docs.oasis-open.org/wsfed/authorization/200706'
 		   elementFormDefault='qualified' >
-  <xs:import namespace='http://www.w3.org/2001/04/xmlenc#'
+  <xs:import namespace='https://www.w3.org/2001/04/xmlenc#'
              schemaLocation='xenc-schema.xsd'/>
   
   <!-- Section 9.2 -->

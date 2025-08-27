@@ -410,7 +410,7 @@ describe('prepareBinaryData', () => {
 
 	it('handles IncomingMessage with responseUrl', async () => {
 		const incomingMessage = bufferToIncomingMessage(buffer);
-		incomingMessage.responseUrl = 'http://example.com/file.txt';
+		incomingMessage.responseUrl = 'https://example.com/file.txt';
 
 		const result = await prepareBinaryData(incomingMessage, executionId, workflowId);
 

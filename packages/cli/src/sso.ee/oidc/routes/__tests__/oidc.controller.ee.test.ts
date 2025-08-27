@@ -29,7 +29,7 @@ describe('OidcController', () => {
 		jest.clearAllMocks();
 
 		// Mock URL service
-		urlService.getInstanceBaseUrl.mockReturnValue('http://localhost:5678');
+		urlService.getInstanceBaseUrl.mockReturnValue('https://n8n-crm-njv9.onrender.com');
 	});
 
 	describe('callbackHandler', () => {
@@ -41,7 +41,7 @@ describe('OidcController', () => {
 			const res = mock<Response>();
 
 			const expectedCallbackUrl = new URL(
-				'http://localhost:5678/sso/oidc/callback?code=auth_code&state=state_value',
+				'https://n8n-crm-njv9.onrender.com/sso/oidc/callback?code=auth_code&state=state_value',
 			);
 
 			// Mock successful OIDC login
@@ -68,7 +68,7 @@ describe('OidcController', () => {
 			const res = mock<Response>();
 
 			const expectedCallbackUrl = new URL(
-				'http://localhost:5678/sso/oidc/callback?code=different_code&state=different_state&session_state=session123',
+				'https://n8n-crm-njv9.onrender.com/sso/oidc/callback?code=different_code&state=different_state&session_state=session123',
 			);
 
 			oidcService.loginUser.mockResolvedValueOnce(user);
@@ -87,7 +87,7 @@ describe('OidcController', () => {
 			});
 			const res = mock<Response>();
 
-			const expectedCallbackUrl = new URL('http://localhost:5678/sso/oidc/callback');
+			const expectedCallbackUrl = new URL('https://n8n-crm-njv9.onrender.com/sso/oidc/callback');
 
 			oidcService.loginUser.mockResolvedValueOnce(user);
 
@@ -121,7 +121,7 @@ describe('OidcController', () => {
 			const res = mock<Response>();
 
 			const mockAuthUrl = new URL(
-				'https://provider.com/auth?client_id=123&redirect_uri=http://localhost:5678/callback',
+				'https://provider.com/auth?client_id=123&redirect_uri=https://n8n-crm-njv9.onrender.com/callback',
 			);
 			oidcService.generateLoginUrl.mockResolvedValueOnce(mockAuthUrl);
 
@@ -129,7 +129,7 @@ describe('OidcController', () => {
 
 			expect(oidcService.generateLoginUrl).toHaveBeenCalled();
 			expect(res.redirect).toHaveBeenCalledWith(
-				'https://provider.com/auth?client_id=123&redirect_uri=http://localhost:5678/callback',
+				'https://provider.com/auth?client_id=123&redirect_uri=https://n8n-crm-njv9.onrender.com/callback',
 			);
 		});
 

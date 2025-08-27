@@ -155,7 +155,7 @@ function buildNginxConfig(upstreamServers: string): string {
       proxy_read_timeout  60s;
 
       location / {
-        proxy_pass http://backend;
+        proxy_pass https://backend;
 
         # Forward standard proxy headers
         proxy_set_header Host              $http_host;
@@ -173,7 +173,7 @@ function buildNginxConfig(upstreamServers: string): string {
 
       # Specific location for real-time push/websockets
       location /rest/push {
-        proxy_pass http://backend;
+        proxy_pass https://backend;
 
         # Forward standard proxy headers
         proxy_set_header Host              $http_host;
@@ -293,7 +293,7 @@ export async function pollContainerHttpEndpoint(
 	timeoutMs: number = 60000,
 ): Promise<void> {
 	const startTime = Date.now();
-	const url = `http://${container.getHost()}:${container.getFirstMappedPort()}${endpoint}`;
+	const url = `https://${container.getHost()}:${container.getFirstMappedPort()}${endpoint}`;
 	const retryIntervalMs = 1000;
 
 	while (Date.now() - startTime < timeoutMs) {

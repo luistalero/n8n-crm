@@ -8,7 +8,7 @@ describe('Wordpress > GenericFunctions', () => {
 			requestWithAuthentication: jest.fn(),
 		},
 		getCredentials: jest.fn().mockResolvedValue({
-			url: 'http://example.com',
+			url: 'https://example.com',
 			allowUnauthorizedCerts: false,
 		}),
 		getNode: jest.fn(),

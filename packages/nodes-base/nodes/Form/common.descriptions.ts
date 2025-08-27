@@ -540,7 +540,7 @@ export const respondWithOptions: INodeProperties = {
 					type: 'string',
 					default: '',
 					validateType: 'url',
-					placeholder: 'e.g. http://www.n8n.io',
+					placeholder: 'e.g. https://www.n8n.io',
 					displayOptions: {
 						show: {
 							respondWith: ['redirect'],

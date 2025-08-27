@@ -6,7 +6,7 @@ describe('HttpRequestV3', () => {
 	let node: HttpRequestV3;
 	let executeFunctions: IExecuteFunctions;
 
-	const baseUrl = 'http://example.com';
+	const baseUrl = 'https://example.com';
 	const options = {
 		redirect: '',
 		batching: { batch: { batchSize: 1, batchInterval: 1 } },

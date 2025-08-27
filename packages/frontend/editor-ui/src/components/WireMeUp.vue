@@ -4,8 +4,8 @@
 		height="80"
 		viewBox="0 0 112 80"
 		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns="https://www.w3.org/2000/svg"
+		xmlns:xlink="https://www.w3.org/1999/xlink"
 	>
 		<mask
 			id="mask0_489_46042"

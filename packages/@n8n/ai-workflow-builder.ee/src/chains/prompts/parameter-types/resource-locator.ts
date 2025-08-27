@@ -13,7 +13,7 @@ ResourceLocator parameters are special fields used for selecting resources like 
 \`\`\`
 
 ### Mode Detection Guidelines:
-- Use mode "url" when the value is a URL (starts with http:// or https://)
+- Use mode "url" when the value is a URL (starts with https:// or https://)
 - Use mode "id" when the value looks like an ID (alphanumeric string)
 - Use mode "name" when the value has a prefix like # (Slack channels) or @ (users)
 - Use mode "list" when referencing a dropdown selection (rarely needed in updates)

@@ -24,31 +24,31 @@ This document and the information contained herein is provided on an AS IS basis
 INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF 
 MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
   -->
-<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
-		   xmlns:sp='http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
-		   xmlns:tns='http://docs.oasis-open.org/wsfed/federation/200706'
-		   xmlns:wsa='http://www.w3.org/2005/08/addressing'
-       xmlns:mex='http://schemas.xmlsoap.org/ws/2004/09/mex'
-       xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
-		   xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'
+<xs:schema xmlns:xs='https://www.w3.org/2001/XMLSchema'
+		   xmlns:sp='https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
+		   xmlns:tns='https://docs.oasis-open.org/wsfed/federation/200706'
+		   xmlns:wsa='https://www.w3.org/2005/08/addressing'
+       xmlns:mex='https://schemas.xmlsoap.org/ws/2004/09/mex'
+       xmlns:wsse='https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
+		   xmlns:wsu='https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'
        xmlns:md='urn:oasis:names:tc:SAML:2.0:metadata'
-       xmlns:auth='http://docs.oasis-open.org/wsfed/authorization/200706'
-		   targetNamespace='http://docs.oasis-open.org/wsfed/federation/200706'
+       xmlns:auth='https://docs.oasis-open.org/wsfed/authorization/200706'
+		   targetNamespace='https://docs.oasis-open.org/wsfed/federation/200706'
 		   elementFormDefault='qualified' >
 
-  <xs:import namespace='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
+  <xs:import namespace='https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
 			 schemaLocation='oasis-200401-wss-wssecurity-secext-1.0.xsd' />
-  <xs:import namespace='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'
+  <xs:import namespace='https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'
 			 schemaLocation='oasis-200401-wss-wssecurity-utility-1.0.xsd' />
-  <xs:import namespace='http://www.w3.org/2005/08/addressing'
+  <xs:import namespace='https://www.w3.org/2005/08/addressing'
 			 schemaLocation='ws-addr.xsd' />
-  <xs:import namespace='http://schemas.xmlsoap.org/ws/2004/09/mex'
+  <xs:import namespace='https://schemas.xmlsoap.org/ws/2004/09/mex'
 			 schemaLocation='MetadataExchange.xsd' />
   <xs:import namespace='urn:oasis:names:tc:SAML:2.0:metadata'
 			 schemaLocation='saml-schema-metadata-2.0.xsd' />
-  <xs:import namespace='http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
+  <xs:import namespace='https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
 			 schemaLocation='ws-securitypolicy-1.2.xsd'/>
-  <xs:import namespace='http://docs.oasis-open.org/wsfed/authorization/200706'
+  <xs:import namespace='https://docs.oasis-open.org/wsfed/authorization/200706'
        schemaLocation='ws-authorization.xsd'/>
 
   <!-- Section 3.1 -->

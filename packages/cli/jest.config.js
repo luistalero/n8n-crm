@@ -2,7 +2,7 @@
 module.exports = {
 	...require('../../jest.config'),
 	testEnvironmentOptions: {
-		url: 'http://localhost/',
+		url: 'https://localhost/',
 	},
 	globalSetup: '<rootDir>/test/setup.ts',
 	globalTeardown: '<rootDir>/test/teardown.ts',

@@ -334,7 +334,7 @@
 				"updateFields": {
 					"field": {
 						"key": "website",
-						"value": "http://community.n8n.io"
+						"value": "https://community.n8n.io"
 					}
 				}
 			},

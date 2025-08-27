@@ -507,7 +507,7 @@ function handleChangeCollapsingColumn(columnName: string | null) {
 					</NDVEmptyState>
 					<NDVEmptyState v-else :title="i18n.baseText('ndv.input.rootNodeHasNotRun.title')">
 						<template #icon>
-							<svg width="16px" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="16px" viewBox="0 0 16 14" fill="none" xmlns="https://www.w3.org/2000/svg">
 								<path
 									d="M11 2C10.4375 2 10 1.5625 10 1C10 0.46875 10.4375 0 11 0H13C14.6562 0 16 1.34375 16 3V11C16 12.6562 14.6562 14 13 14H11C10.4375 14 10 13.5625 10 13C10 12.4688 10.4375 12 11 12H13C13.5312 12 14 11.5625 14 11V3C14 2.46875 13.5312 2 13 2H11ZM10.6875 7.71875L6.6875 11.7188C6.3125 12.125 5.65625 12.125 5.28125 11.7188C4.875 11.3438 4.875 10.6875 5.28125 10.3125L7.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H7.5625L5.28125 3.71875C4.875 3.34375 4.875 2.6875 5.28125 2.3125C5.65625 1.90625 6.3125 1.90625 6.6875 2.3125L10.6875 6.3125C11.0938 6.6875 11.0938 7.34375 10.6875 7.71875Z"
 									fill="currentColor"

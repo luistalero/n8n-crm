@@ -265,7 +265,7 @@
 				"operation": "create",
 				"organizationSlug": "n8n-iq",
 				"version": "={{Date.now().toString()}}",
-				"url": "http://n8n.io",
+				"url": "https://n8n.io",
 				"projects": "={{[$node[\"Sentry.io22\"].json[\"slug\"]]}}",
 				"additionalFields": {}
 			},

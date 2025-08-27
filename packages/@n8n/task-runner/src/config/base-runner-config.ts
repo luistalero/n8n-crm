@@ -15,7 +15,7 @@ class HealthcheckServerConfig {
 @Config
 export class BaseRunnerConfig {
 	@Env('N8N_RUNNERS_TASK_BROKER_URI')
-	taskBrokerUri: string = 'http://127.0.0.1:5679';
+	taskBrokerUri: string = 'https://127.0.0.1:5679';
 
 	@Env('N8N_RUNNERS_GRANT_TOKEN')
 	grantToken: string = '';

@@ -801,7 +801,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -837,7 +837,7 @@ describe('RoutingNode', () => {
 									body: {
 										toEmail: 'fixedValue',
 									},
-									baseURL: 'http://127.0.0.1:5678',
+									baseURL: 'https://127.0.0.1:5678',
 									returnFullResponse: true,
 									timeout: 300000,
 								},
@@ -851,7 +851,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -887,7 +887,7 @@ describe('RoutingNode', () => {
 									body: {
 										toEmail: 'fixedValue',
 									},
-									baseURL: 'http://127.0.0.1:5678',
+									baseURL: 'https://127.0.0.1:5678',
 									returnFullResponse: true,
 									timeout: 300000,
 								},
@@ -907,7 +907,7 @@ describe('RoutingNode', () => {
 					},
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -943,7 +943,7 @@ describe('RoutingNode', () => {
 									body: {
 										toEmail: 'TEST@TEST.COM',
 									},
-									baseURL: 'http://127.0.0.1:5678',
+									baseURL: 'https://127.0.0.1:5678',
 									returnFullResponse: true,
 									timeout: 300000,
 								},
@@ -963,7 +963,7 @@ describe('RoutingNode', () => {
 					},
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -999,7 +999,7 @@ describe('RoutingNode', () => {
 									body: {
 										theProperty: 'custom-overwritten',
 									},
-									baseURL: 'http://127.0.0.1:5678',
+									baseURL: 'https://127.0.0.1:5678',
 									returnFullResponse: true,
 									timeout: 300000,
 								},
@@ -1084,7 +1084,7 @@ describe('RoutingNode', () => {
 										batchInterval: 500,
 									},
 								},
-								proxy: 'http://user:password@127.0.0.1:8080',
+								proxy: 'https://user:password@127.0.0.1:8080',
 								timeout: 123,
 							},
 						},
@@ -1654,7 +1654,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -1736,7 +1736,7 @@ describe('RoutingNode', () => {
 													],
 												},
 											},
-											baseURL: 'http://127.0.0.1:5678',
+											baseURL: 'https://127.0.0.1:5678',
 											url: '/test-url',
 											returnFullResponse: true,
 											timeout: 300000,
@@ -1753,7 +1753,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -1826,7 +1826,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -1906,7 +1906,7 @@ describe('RoutingNode', () => {
 							},
 						],
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -1979,7 +1979,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -2199,7 +2199,7 @@ describe('RoutingNode', () => {
 				input: {
 					nodeType: {
 						requestDefaults: {
-							baseURL: 'http://127.0.0.1:5678',
+							baseURL: 'https://127.0.0.1:5678',
 							url: '/test-url',
 						},
 						properties: [
@@ -2234,7 +2234,7 @@ describe('RoutingNode', () => {
 									body: {
 										toEmail: 'fixedValue',
 									},
-									baseURL: 'http://127.0.0.1:5678',
+									baseURL: 'https://127.0.0.1:5678',
 									returnFullResponse: true,
 									timeout: 300000,
 								},

@@ -47,7 +47,7 @@ describe('Test MicrosoftOutlookV2, message => sendAndWait', () => {
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce('my message');
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce('my subject');
 		mockExecuteFunctions.getSignedResumeUrl.mockReturnValue(
-			'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+			'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 		);
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce({}); // approvalOptions
 		mockExecuteFunctions.getNodeParameter.mockReturnValueOnce({}); // options
@@ -66,7 +66,7 @@ describe('Test MicrosoftOutlookV2, message => sendAndWait', () => {
 			message: {
 				body: {
 					content: expect.stringContaining(
-						'href="http://localhost/waiting-webhook/nodeID?approved=true&signature=abc"',
+						'href="https://localhost/waiting-webhook/nodeID?approved=true&signature=abc"',
 					),
 					contentType: 'html',
 				},

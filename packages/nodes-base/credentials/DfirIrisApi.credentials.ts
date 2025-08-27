@@ -17,7 +17,7 @@ export class DfirIrisApi implements ICredentialType {
 	httpRequestNode = {
 		name: 'DFIR-IRIS',
 		docsUrl: 'https://docs.dfir-iris.org/operations/api/',
-		apiBaseUrlPlaceholder: 'http://<yourserver_ip>/manage/cases/list',
+		apiBaseUrlPlaceholder: 'https://<yourserver_ip>/manage/cases/list',
 	};
 
 	properties: INodeProperties[] = [

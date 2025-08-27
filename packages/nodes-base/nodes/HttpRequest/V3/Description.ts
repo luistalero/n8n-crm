@@ -68,7 +68,7 @@ export const mainProperties: INodeProperties[] = [
 		name: 'url',
 		type: 'string',
 		default: '',
-		placeholder: 'http://example.com/index.html',
+		placeholder: 'https://example.com/index.html',
 		description: 'The URL to make the request to',
 		required: true,
 	},
@@ -1170,7 +1170,7 @@ export const mainProperties: INodeProperties[] = [
 				name: 'proxy',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. http://myproxy:3128',
+				placeholder: 'e.g. https://myproxy:3128',
 				description: 'HTTP proxy to use',
 			},
 			{

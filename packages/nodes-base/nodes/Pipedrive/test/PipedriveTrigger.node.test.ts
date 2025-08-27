@@ -24,7 +24,7 @@ describe('PipedriveTrigger', () => {
 	describe('Webhook Methods', () => {
 		describe('checkExists', () => {
 			it('should return true if webhook already exists', async () => {
-				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('http://test-webhook-url');
+				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('https://test-webhook-url');
 				mockHookFunctions.getWorkflowStaticData.mockReturnValue({});
 				mockHookFunctions.getNodeParameter.mockImplementation((param) => {
 					if (param === 'action') return '*';
@@ -36,7 +36,7 @@ describe('PipedriveTrigger', () => {
 					data: [
 						{
 							id: '123',
-							subscription_url: 'http://test-webhook-url',
+							subscription_url: 'https://test-webhook-url',
 							event_action: '*',
 							event_object: 'deal',
 						},
@@ -51,7 +51,7 @@ describe('PipedriveTrigger', () => {
 			});
 
 			it('should return false if no matching webhook exists', async () => {
-				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('http://test-webhook-url');
+				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('https://test-webhook-url');
 				mockHookFunctions.getWorkflowStaticData.mockReturnValue({});
 				mockHookFunctions.getNodeParameter.mockImplementation((param) => {
 					if (param === 'action') return '*';
@@ -62,7 +62,7 @@ describe('PipedriveTrigger', () => {
 				(pipedriveApiRequest as jest.Mock).mockResolvedValue({
 					data: [
 						{
-							subscription_url: 'http://different-url',
+							subscription_url: 'https://different-url',
 							event_action: 'create',
 							event_object: 'person',
 						},
@@ -78,7 +78,7 @@ describe('PipedriveTrigger', () => {
 
 		describe('create', () => {
 			it('should create a webhook successfully', async () => {
-				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('http://test-webhook-url');
+				mockHookFunctions.getNodeWebhookUrl.mockReturnValue('https://test-webhook-url');
 				mockHookFunctions.getNodeParameter.mockImplementation((param) => {
 					if (param === 'incomingAuthentication') return 'none';
 					if (param === 'action') return '*';
@@ -100,7 +100,7 @@ describe('PipedriveTrigger', () => {
 					expect.objectContaining({
 						event_action: '*',
 						event_object: 'deal',
-						subscription_url: 'http://test-webhook-url',
+						subscription_url: 'https://test-webhook-url',
 					}),
 				);
 			});

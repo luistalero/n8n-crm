@@ -52,7 +52,7 @@ const testSyslogDestination: MessageEventBusDestinationSyslogOptions = {
 const testWebhookDestination: MessageEventBusDestinationWebhookOptions = {
 	...defaultMessageEventBusDestinationWebhookOptions,
 	id: '88be6560-bfb4-455c-8aa1-06971e9e5522',
-	url: 'http://localhost:3456',
+	url: 'https://localhost:3456',
 	method: 'POST',
 	label: 'Test Webhook',
 	enabled: false,
@@ -62,7 +62,7 @@ const testWebhookDestination: MessageEventBusDestinationWebhookOptions = {
 const testSentryDestination: MessageEventBusDestinationSentryOptions = {
 	...defaultMessageEventBusDestinationSentryOptions,
 	id: '450ca04b-87dd-4837-a052-ab3a347a00e9',
-	dsn: 'http://localhost:3000',
+	dsn: 'https://localhost:3000',
 	label: 'Test Sentry',
 	enabled: false,
 	subscribedEvents: ['n8n.test.message', 'n8n.audit.user.updated'],

@@ -18,7 +18,7 @@ export class RundeckApi implements ICredentialType {
 			name: 'url',
 			type: 'string',
 			default: '',
-			placeholder: 'http://127.0.0.1:4440',
+			placeholder: 'https://127.0.0.1:4440',
 		},
 		{
 			displayName: 'Token',

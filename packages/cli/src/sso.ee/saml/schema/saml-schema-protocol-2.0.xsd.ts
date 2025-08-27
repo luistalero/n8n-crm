@@ -5,22 +5,22 @@ export const xmlFileInfo: XMLFileInfo = {
 	contents: `<?xml version="1.0" encoding="UTF-8"?>
 <schema
     targetNamespace="urn:oasis:names:tc:SAML:2.0:protocol"
-    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns="https://www.w3.org/2001/XMLSchema"
     xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
     xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
-    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+    xmlns:ds="https://www.w3.org/2000/09/xmldsig#"
     elementFormDefault="unqualified"
     attributeFormDefault="unqualified"
     blockDefault="substitution"
     version="2.0">
     <import namespace="urn:oasis:names:tc:SAML:2.0:assertion"
         schemaLocation="saml-schema-assertion-2.0.xsd"/>
-    <import namespace="http://www.w3.org/2000/09/xmldsig#"
+    <import namespace="https://www.w3.org/2000/09/xmldsig#"
         schemaLocation="xmldsig-core-schema.xsd"/>
     <annotation>
         <documentation>
             Document identifier: saml-schema-protocol-2.0
-            Location: http://docs.oasis-open.org/security/saml/v2.0/
+            Location: https://docs.oasis-open.org/security/saml/v2.0/
             Revision history:
             V1.0 (November, 2002):
               Initial Standard Schema.

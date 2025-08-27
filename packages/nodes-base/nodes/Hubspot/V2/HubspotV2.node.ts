@@ -2360,8 +2360,8 @@ export class HubspotV2 implements INodeType {
 							const returnAll = this.getNodeParameter('returnAll', 0);
 							if (domain.includes('https://')) {
 								domain = domain.replace('https://', '');
-							} else if (domain.includes('http://')) {
-								domain = domain.replace('http://', '');
+							} else if (domain.includes('https://')) {
+								domain = domain.replace('https://', '');
 							}
 							const body: IDataObject = {
 								requestOptions: {},

@@ -11,13 +11,13 @@ describe('API: schemaPreview', () => {
 				properties: { count: { type: 'number' }, name: { type: 'string' } },
 			};
 			vi.spyOn(apiUtils, 'request').mockResolvedValue(schema);
-			const schemaResponse = await getSchemaPreview('http://test-n8n-base-url', {
+			const schemaResponse = await getSchemaPreview('https://test-n8n-base-url', {
 				nodeType: 'n8n-nodes-base.test',
 				version: 1.2,
 			});
 
 			expect(apiUtils.request).toHaveBeenCalledWith({
-				baseURL: 'http://test-n8n-base-url',
+				baseURL: 'https://test-n8n-base-url',
 				endpoint: 'schemas/n8n-nodes-base.test/1.2.0.json',
 				method: 'GET',
 				withCredentials: false,
@@ -30,7 +30,7 @@ describe('API: schemaPreview', () => {
 			vi.spyOn(apiUtils, 'request').mockResolvedValue(schema);
 
 			await expect(
-				getSchemaPreview('http://test-n8n-base-url', {
+				getSchemaPreview('https://test-n8n-base-url', {
 					nodeType: 'n8n-nodes-base.test',
 					version: 1.2,
 					resource: 'contact',
@@ -39,7 +39,7 @@ describe('API: schemaPreview', () => {
 			).rejects.toEqual(new Error('Invalid JSON schema'));
 
 			expect(apiUtils.request).toHaveBeenCalledWith({
-				baseURL: 'http://test-n8n-base-url',
+				baseURL: 'https://test-n8n-base-url',
 				endpoint: 'schemas/n8n-nodes-base.test/1.2.0/contact/create.json',
 				method: 'GET',
 				withCredentials: false,
@@ -53,7 +53,7 @@ describe('API: schemaPreview', () => {
 			};
 			vi.spyOn(apiUtils, 'request').mockResolvedValue(schema);
 
-			await getSchemaPreview('http://test.com', {
+			await getSchemaPreview('https://test.com', {
 				nodeType: '@n8n/n8n-nodes-base.asana',
 				version: 1,
 				resource: 'resource',
@@ -62,7 +62,7 @@ describe('API: schemaPreview', () => {
 
 			expect(apiUtils.request).toHaveBeenCalledWith({
 				method: 'GET',
-				baseURL: 'http://test.com',
+				baseURL: 'https://test.com',
 				endpoint: 'schemas/n8n-nodes-base.asana/1.0.0/resource/operation.json',
 				withCredentials: false,
 			});

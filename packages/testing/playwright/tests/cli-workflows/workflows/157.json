@@ -177,8 +177,8 @@
 				"fromEmailAddress": "node8qa@gmail.com",
 				"templateName": "={{$node[\"Set1\"].json[\"templateName\"]}}",
 				"templateSubject": "=VerificationSubject{{Date.now()}}",
-				"successRedirectionURL": "http://n8n.io",
-				"failureRedirectionURL": "http://n8n.io"
+				"successRedirectionURL": "https://n8n.io",
+				"failureRedirectionURL": "https://n8n.io"
 			},
 			"name": "AWS SES7",
 			"type": "n8n-nodes-base.awsSes",

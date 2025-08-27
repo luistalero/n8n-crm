@@ -51,12 +51,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:40:00Z",
-					"link": "http://example.com/test/1675950000",
+					"link": "https://example.com/test/1675950000",
 					"pubDate": "Thu, 09 Feb 2023 13:40:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
 					"contentSnippet": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
-					"guid": "http://example.com/test/1675950000",
+					"guid": "https://example.com/test/1675950000",
 					"isoDate": "2023-02-09T13:40:00.000Z"
 				}
 			},
@@ -64,12 +64,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:39:00Z",
-					"link": "http://example.com/test/1675949940",
+					"link": "https://example.com/test/1675949940",
 					"pubDate": "Thu, 09 Feb 2023 13:39:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
 					"contentSnippet": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
-					"guid": "http://example.com/test/1675949940",
+					"guid": "https://example.com/test/1675949940",
 					"isoDate": "2023-02-09T13:39:00.000Z"
 				}
 			},
@@ -77,12 +77,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:38:00Z",
-					"link": "http://example.com/test/1675949880",
+					"link": "https://example.com/test/1675949880",
 					"pubDate": "Thu, 09 Feb 2023 13:38:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
 					"contentSnippet": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
-					"guid": "http://example.com/test/1675949880",
+					"guid": "https://example.com/test/1675949880",
 					"isoDate": "2023-02-09T13:38:00.000Z"
 				}
 			}
@@ -92,12 +92,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:40:00Z",
-					"link": "http://example.com/test/1675950000",
+					"link": "https://example.com/test/1675950000",
 					"pubDate": "Thu, 09 Feb 2023 13:40:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
 					"contentSnippet": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
-					"guid": "http://example.com/test/1675950000",
+					"guid": "https://example.com/test/1675950000",
 					"isoDate": "2023-02-09T13:40:00.000Z"
 				}
 			},
@@ -105,12 +105,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:39:00Z",
-					"link": "http://example.com/test/1675949940",
+					"link": "https://example.com/test/1675949940",
 					"pubDate": "Thu, 09 Feb 2023 13:39:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
 					"contentSnippet": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
-					"guid": "http://example.com/test/1675949940",
+					"guid": "https://example.com/test/1675949940",
 					"isoDate": "2023-02-09T13:39:00.000Z"
 				}
 			},
@@ -118,12 +118,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:38:00Z",
-					"link": "http://example.com/test/1675949880",
+					"link": "https://example.com/test/1675949880",
 					"pubDate": "Thu, 09 Feb 2023 13:38:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
 					"contentSnippet": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
-					"guid": "http://example.com/test/1675949880",
+					"guid": "https://example.com/test/1675949880",
 					"isoDate": "2023-02-09T13:38:00.000Z"
 				}
 			}
@@ -133,12 +133,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:40:00Z",
-					"link": "http://example.com/test/1675950000",
+					"link": "https://example.com/test/1675950000",
 					"pubDate": "Thu, 09 Feb 2023 13:40:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
 					"contentSnippet": "Fugiat excepteur exercitation tempor ut aute sunt pariatur veniam pariatur dolor.",
-					"guid": "http://example.com/test/1675950000",
+					"guid": "https://example.com/test/1675950000",
 					"isoDate": "2023-02-09T13:40:00.000Z",
 					"custom": "custom"
 				}
@@ -147,12 +147,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:39:00Z",
-					"link": "http://example.com/test/1675949940",
+					"link": "https://example.com/test/1675949940",
 					"pubDate": "Thu, 09 Feb 2023 13:39:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
 					"contentSnippet": "Laboris quis nulla tempor eu ullamco est esse qui aute commodo aliqua occaecat.",
-					"guid": "http://example.com/test/1675949940",
+					"guid": "https://example.com/test/1675949940",
 					"isoDate": "2023-02-09T13:39:00.000Z",
 					"custom": "custom"
 				}
@@ -161,12 +161,12 @@
 				"json": {
 					"creator": "John Smith",
 					"title": "Lorem ipsum 2023-02-09T13:38:00Z",
-					"link": "http://example.com/test/1675949880",
+					"link": "https://example.com/test/1675949880",
 					"pubDate": "Thu, 09 Feb 2023 13:38:00 GMT",
 					"dc:creator": "John Smith",
 					"content": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
 					"contentSnippet": "Irure labore dolor dolore sint aliquip eu anim aute anim et nulla adipisicing nostrud.",
-					"guid": "http://example.com/test/1675949880",
+					"guid": "https://example.com/test/1675949880",
 					"isoDate": "2023-02-09T13:38:00.000Z",
 					"custom": "custom"
 				}

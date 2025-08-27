@@ -82,7 +82,7 @@ docker run \
   -e N8N_USER_EMAIL=user@n8n.io \
   -e N8N_USER_PASSWORD=password \
   # For macos, n8n running outside docker
-  -e N8N_BASE_URL=http://host.docker.internal:5678 \
+  -e N8N_BASE_URL=https://host.docker.internal:5678 \
   n8n-benchmark
 ```
 
@@ -96,7 +96,7 @@ Requirements:
 ```sh
 pnpm build
 
-# Run tests against http://localhost:5678 with specified email and password
+# Run tests against https://n8n-crm-njv9.onrender.com with specified email and password
 N8N_USER_EMAIL=user@n8n.io N8N_USER_PASSWORD=password ./bin/n8n-benchmark run
 ```
 

@@ -308,7 +308,7 @@
 			"parameters": {
 				"operation": "sendAudio",
 				"chatId": "@FixedChannel123",
-				"file": "http://websrvr90va.audiovideoweb.com/va90web25003/companions/Foundations%20of%20Rock/13.07.mp3",
+				"file": "https://websrvr90va.audiovideoweb.com/va90web25003/companions/Foundations%20of%20Rock/13.07.mp3",
 				"additionalFields": {}
 			},
 			"name": "Telegram15",
@@ -346,7 +346,7 @@
 			"parameters": {
 				"operation": "sendVideo",
 				"chatId": "@FixedChannel123",
-				"file": "http://vod-progressive.akamaized.net/exp=1619203691~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3610%2F13%2F343052045%2F1373111309.mp4~hmac=8ede5174dfb91845afeae538f8144fe5d6819b4a4713f700e1ff805261445369/vimeo-prod-skyfire-std-us/01/3610/13/343052045/1373111309.mp4?download=1&filename=Pexels Videos 2519660.mp4",
+				"file": "https://vod-progressive.akamaized.net/exp=1619203691~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3610%2F13%2F343052045%2F1373111309.mp4~hmac=8ede5174dfb91845afeae538f8144fe5d6819b4a4713f700e1ff805261445369/vimeo-prod-skyfire-std-us/01/3610/13/343052045/1373111309.mp4?download=1&filename=Pexels Videos 2519660.mp4",
 				"additionalFields": {}
 			},
 			"name": "Telegram17",

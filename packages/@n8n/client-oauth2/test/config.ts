@@ -1,7 +1,7 @@
 export const baseUrl = 'https://mock.auth.service';
 export const accessTokenUri = baseUrl + '/login/oauth/access_token';
 export const authorizationUri = baseUrl + '/login/oauth/authorize';
-export const redirectUri = 'http://example.com/auth/callback';
+export const redirectUri = 'https://example.com/auth/callback';
 
 export const accessToken = '4430eb1615fb6127cbf828a8e403';
 export const refreshToken = 'def456token';

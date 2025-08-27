@@ -41,10 +41,10 @@ export class SamlService {
 
 	private _samlPreferences: SamlPreferences = {
 		mapping: {
-			email: 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress',
-			firstName: 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstname',
-			lastName: 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastname',
-			userPrincipalName: 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn',
+			email: 'https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress',
+			firstName: 'https://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstname',
+			lastName: 'https://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastname',
+			userPrincipalName: 'https://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn',
 		},
 		metadata: '',
 		metadataUrl: '',

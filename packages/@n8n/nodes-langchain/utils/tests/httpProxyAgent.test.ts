@@ -57,8 +57,8 @@ describe('getProxyAgent', () => {
 
 		it('should respect priority order of proxy environment variables', () => {
 			// Set multiple proxy environment variables
-			process.env.HTTP_PROXY = 'http://http-proxy.example.com:8080';
-			process.env.http_proxy = 'http://http-proxy-lowercase.example.com:8080';
+			process.env.HTTP_PROXY = 'https://http-proxy.example.com:8080';
+			process.env.http_proxy = 'https://http-proxy-lowercase.example.com:8080';
 			process.env.HTTPS_PROXY = 'https://https-proxy.example.com:8080';
 			process.env.https_proxy = 'https://https-proxy-lowercase.example.com:8080';
 
@@ -89,17 +89,17 @@ describe('getProxyAgent', () => {
 		});
 
 		it('should create ProxyAgent for HTTP URL when HTTP_PROXY is set', () => {
-			const proxyUrl = 'http://proxy.example.com:8080';
+			const proxyUrl = 'https://proxy.example.com:8080';
 			process.env.HTTP_PROXY = proxyUrl;
 
-			const agent = getProxyAgent('http://api.example.com');
+			const agent = getProxyAgent('https://api.example.com');
 
 			expect(agent).toEqual({ proxyUrl });
 			expect(ProxyAgent).toHaveBeenCalledWith(proxyUrl);
 		});
 
 		it('should use HTTPS_PROXY for HTTPS URLs even when HTTP_PROXY is set', () => {
-			const httpProxy = 'http://http-proxy.example.com:8080';
+			const httpProxy = 'https://http-proxy.example.com:8080';
 			const httpsProxy = 'https://https-proxy.example.com:8443';
 			process.env.HTTP_PROXY = httpProxy;
 			process.env.HTTPS_PROXY = httpsProxy;
@@ -111,18 +111,18 @@ describe('getProxyAgent', () => {
 		});
 
 		it('should respect NO_PROXY for localhost', () => {
-			const proxyUrl = 'http://proxy.example.com:8080';
+			const proxyUrl = 'https://proxy.example.com:8080';
 			process.env.HTTP_PROXY = proxyUrl;
 			process.env.NO_PROXY = 'localhost,127.0.0.1';
 
-			const agent = getProxyAgent('http://localhost:3000');
+			const agent = getProxyAgent('https://localhost:3000');
 
 			expect(agent).toBeUndefined();
 			expect(ProxyAgent).not.toHaveBeenCalled();
 		});
 
 		it('should respect NO_PROXY wildcard patterns', () => {
-			const proxyUrl = 'http://proxy.example.com:8080';
+			const proxyUrl = 'https://proxy.example.com:8080';
 			process.env.HTTPS_PROXY = proxyUrl;
 			process.env.NO_PROXY = '*.internal.company.com,localhost';
 
@@ -133,7 +133,7 @@ describe('getProxyAgent', () => {
 		});
 
 		it('should use proxy for URLs not in NO_PROXY', () => {
-			const proxyUrl = 'http://proxy.example.com:8080';
+			const proxyUrl = 'https://proxy.example.com:8080';
 			process.env.HTTPS_PROXY = proxyUrl;
 			process.env.NO_PROXY = 'localhost,127.0.0.1';
 
@@ -144,7 +144,7 @@ describe('getProxyAgent', () => {
 		});
 
 		it('should handle mixed case environment variables', () => {
-			const proxyUrl = 'http://proxy.example.com:8080';
+			const proxyUrl = 'https://proxy.example.com:8080';
 			process.env.https_proxy = proxyUrl;
 			process.env.no_proxy = 'localhost';
 

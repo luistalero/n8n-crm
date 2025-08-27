@@ -62,7 +62,7 @@ services:
       redis:
         condition: service_healthy
     healthcheck:
-      test: ['CMD-SHELL', 'wget --spider -q http://localhost:5678/healthz || exit 1']
+      test: ['CMD-SHELL', 'wget --spider -q https://n8n-crm-njv9.onrender.com/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -100,7 +100,7 @@ services:
       redis:
         condition: service_healthy
     healthcheck:
-      test: ['CMD-SHELL', 'wget --spider -q http://localhost:5678/healthz || exit 1']
+      test: ['CMD-SHELL', 'wget --spider -q https://n8n-crm-njv9.onrender.com/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -140,7 +140,7 @@ services:
       mockapi:
         condition: service_started
     healthcheck:
-      test: ['CMD-SHELL', 'wget --spider -q http://n8n_main2:5678/healthz || exit 1']
+      test: ['CMD-SHELL', 'wget --spider -q https://n8n_main2:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -180,7 +180,7 @@ services:
       mockapi:
         condition: service_started
     healthcheck:
-      test: ['CMD-SHELL', 'wget --spider -q http://n8n_main1:5678/healthz || exit 1']
+      test: ['CMD-SHELL', 'wget --spider -q https://n8n_main1:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -203,7 +203,7 @@ services:
     depends_on:
       - n8n
     environment:
-      - N8N_BASE_URL=http://n8n:80
+      - N8N_BASE_URL=https://n8n:80
       - K6_API_TOKEN=${K6_API_TOKEN}
       - BENCHMARK_RESULT_WEBHOOK_URL=${BENCHMARK_RESULT_WEBHOOK_URL}
       - BENCHMARK_RESULT_WEBHOOK_AUTH_HEADER=${BENCHMARK_RESULT_WEBHOOK_AUTH_HEADER}

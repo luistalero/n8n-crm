@@ -27,8 +27,8 @@ const windowOpenSpy = vi.spyOn(window, 'open');
 
 vi.mock('@n8n/stores/useRootStore', () => ({
 	useRootStore: () => ({
-		formWaitingUrl: 'http://localhost:5678/form-waiting',
-		webhookWaitingUrl: 'http://localhost:5678/webhook-waiting',
+		formWaitingUrl: 'https://n8n-crm-njv9.onrender.com/form-waiting',
+		webhookWaitingUrl: 'https://n8n-crm-njv9.onrender.com/webhook-waiting',
 	}),
 }));
 
@@ -160,7 +160,7 @@ describe('displayForm', () => {
 			},
 		];
 
-		getTestUrlMock.mockReturnValue('http://test-url.com');
+		getTestUrlMock.mockReturnValue('https://test-url.com');
 
 		fetchMock.mockResolvedValue(successResponse);
 
@@ -185,7 +185,7 @@ describe('displayForm', () => {
 		];
 
 		beforeEach(() => {
-			getTestUrlMock.mockReturnValue('http://test-url.com');
+			getTestUrlMock.mockReturnValue('https://test-url.com');
 		});
 
 		it('should open pop-up if the trigger node is a form node', async () => {
@@ -295,7 +295,7 @@ describe('waitingNodeTooltip', () => {
 			},
 		};
 
-		const expectedUrl = 'http://localhost:5678/form-waiting/123';
+		const expectedUrl = 'https://n8n-crm-njv9.onrender.com/form-waiting/123';
 		expect(waitingNodeTooltip(node)).toBe(
 			`Waiting for form submission: <a href="${expectedUrl}" target="_blank">${expectedUrl}</a>`,
 		);
@@ -316,7 +316,7 @@ describe('waitingNodeTooltip', () => {
 			},
 		};
 
-		const expectedUrl = 'http://localhost:5678/webhook-waiting/123/test-suffix';
+		const expectedUrl = 'https://n8n-crm-njv9.onrender.com/webhook-waiting/123/test-suffix';
 		expect(waitingNodeTooltip(node)).toBe(
 			`Waiting for webhook call: <a href="${expectedUrl}" target="_blank">${expectedUrl}</a>`,
 		);
@@ -332,7 +332,7 @@ describe('waitingNodeTooltip', () => {
 			parameters: {},
 		};
 
-		const expectedUrl = 'http://localhost:5678/form-waiting/123';
+		const expectedUrl = 'https://n8n-crm-njv9.onrender.com/form-waiting/123';
 		expect(waitingNodeTooltip(node)).toBe(
 			`Waiting for form submission: <a href="${expectedUrl}" target="_blank">${expectedUrl}</a>`,
 		);
@@ -365,7 +365,7 @@ describe('waitingNodeTooltip', () => {
 			},
 		};
 
-		const expectedUrl = 'http://localhost:5678/webhook-waiting/123';
+		const expectedUrl = 'https://n8n-crm-njv9.onrender.com/webhook-waiting/123';
 		expect(waitingNodeTooltip(node)).toBe(
 			`Waiting for webhook call: <a href="${expectedUrl}" target="_blank">${expectedUrl}</a>`,
 		);
@@ -386,7 +386,7 @@ describe('waitingNodeTooltip', () => {
 			},
 		};
 
-		const expectedUrl = 'http://localhost:5678/webhook-waiting/123';
+		const expectedUrl = 'https://n8n-crm-njv9.onrender.com/webhook-waiting/123';
 		expect(waitingNodeTooltip(node)).toBe(
 			`Waiting for webhook call: <a href="${expectedUrl}" target="_blank">${expectedUrl}</a>`,
 		);

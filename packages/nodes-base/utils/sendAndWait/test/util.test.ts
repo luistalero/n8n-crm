@@ -63,7 +63,7 @@ describe('Send and Wait utils tests', () => {
 			});
 
 			mockExecuteFunctions.getSignedResumeUrl.mockReturnValue(
-				'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+				'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 			);
 			const config = getSendAndWaitConfig(mockExecuteFunctions);
 
@@ -75,7 +75,7 @@ describe('Send and Wait utils tests', () => {
 					{
 						label: 'Approve',
 						style: 'primary',
-						url: 'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+						url: 'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 					},
 				],
 			});
@@ -98,10 +98,10 @@ describe('Send and Wait utils tests', () => {
 			});
 
 			mockExecuteFunctions.getSignedResumeUrl.mockReturnValueOnce(
-				'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+				'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 			);
 			mockExecuteFunctions.getSignedResumeUrl.mockReturnValueOnce(
-				'http://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
+				'https://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
 			);
 
 			const config = getSendAndWaitConfig(mockExecuteFunctions);
@@ -112,12 +112,12 @@ describe('Send and Wait utils tests', () => {
 					{
 						label: 'Reject',
 						style: 'secondary',
-						url: 'http://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
+						url: 'https://localhost/waiting-webhook/nodeID?approved=false&signature=abc',
 					},
 					{
 						label: 'Approve',
 						style: 'primary',
-						url: 'http://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
+						url: 'https://localhost/waiting-webhook/nodeID?approved=true&signature=abc',
 					},
 				]),
 			);
@@ -140,7 +140,7 @@ describe('Send and Wait utils tests', () => {
 				return params[parameterName];
 			});
 
-			mockExecuteFunctions.getSignedResumeUrl.mockReturnValue('http://localhost/testNodeId');
+			mockExecuteFunctions.getSignedResumeUrl.mockReturnValue('https://localhost/testNodeId');
 		});
 
 		it('should create a valid email object', () => {
@@ -362,7 +362,7 @@ describe('Send and Wait utils tests', () => {
 			mockWebhookFunctions.getRequestObject.mockReturnValue({
 				method: 'GET',
 				headers: {
-					'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+					'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +https://www.google.com/bot.html)',
 				},
 				query: { approved: 'false' },
 			} as any);

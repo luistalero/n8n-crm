@@ -19,7 +19,7 @@ pnpm stack:starter
 ```
 
 When started, you'll see:
-- **URL**: http://localhost:[random-port]
+- **URL**: https://localhost:[random-port]
 
 
 ## Common Usage Patterns

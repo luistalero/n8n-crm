@@ -322,7 +322,7 @@ describe('validateCustomProperties', () => {
 	let requestOptions: any;
 
 	beforeEach(() => {
-		requestOptions = { body: {}, headers: {}, url: 'http://mock.url' };
+		requestOptions = { body: {}, headers: {}, url: 'https://mock.url' };
 	});
 
 	test('should merge custom properties into requestOptions.body for valid input', async () => {

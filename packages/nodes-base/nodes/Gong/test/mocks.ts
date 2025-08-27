@@ -219,8 +219,8 @@ export const gongApiResponse = {
 					],
 				},
 				media: {
-					audioUrl: 'http://example.com',
-					videoUrl: 'http://example.com',
+					audioUrl: 'https://example.com',
+					videoUrl: 'https://example.com',
 				},
 			},
 		],
@@ -499,8 +499,8 @@ export const gongNodeResponse = {
 					],
 				},
 				media: {
-					audioUrl: 'http://example.com',
-					videoUrl: 'http://example.com',
+					audioUrl: 'https://example.com',
+					videoUrl: 'https://example.com',
 				},
 				transcript: [
 					{

@@ -5865,14 +5865,14 @@ export const tools = {
 			d: 'Get Encoded URL',
 			ed: 'Encode URL to avoid problems',
 			g: 'internet',
-			p: [{ n: 'url', r: true, t: 'string', p: 'http://google.com' }],
+			p: [{ n: 'url', r: true, t: 'string', p: 'https://google.com' }],
 		},
 		{
 			k: 'checkUrlExist',
 			d: 'Check URL Exists',
 			ed: 'Check if an URL exists',
 			g: 'internet',
-			p: [{ n: 'url', r: true, t: 'string', p: 'http://www.google.com' }],
+			p: [{ n: 'url', r: true, t: 'string', p: 'https://www.google.com' }],
 		},
 		{
 			k: 'getNetFixip',
@@ -5976,7 +5976,7 @@ export const tools = {
 			d: 'Check URL Is Valid',
 			ed: 'Check that an URL has a valid format',
 			g: 'internet',
-			p: [{ n: 'url', r: true, t: 'string', p: 'http://www.google.com' }],
+			p: [{ n: 'url', r: true, t: 'string', p: 'https://www.google.com' }],
 		},
 		{
 			k: 'checkNumberBetw',

@@ -54,7 +54,7 @@ export class GristApi implements ICredentialType {
 			name: 'selfHostedUrl',
 			type: 'string',
 			default: '',
-			placeholder: 'http://localhost:8484',
+			placeholder: 'https://localhost:8484',
 			required: true,
 			description:
 				'URL of your Grist instance. Include http/https without /api and no trailing slash.',

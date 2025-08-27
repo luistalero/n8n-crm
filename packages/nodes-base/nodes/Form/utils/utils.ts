@@ -179,7 +179,7 @@ export function prepareFormData({
 
 	if (redirectUrl) {
 		if (!redirectUrl.includes('://')) {
-			redirectUrl = `http://${redirectUrl}`;
+			redirectUrl = `https://${redirectUrl}`;
 		}
 		formData.redirectUrl = redirectUrl;
 	}

@@ -1,7 +1,7 @@
 import type { ChatOptions } from '@n8n/chat/types';
 
 export const defaultOptions: ChatOptions = {
-	webhookUrl: 'http://localhost:5678',
+	webhookUrl: 'https://n8n-crm-njv9.onrender.com',
 	webhookConfig: {
 		method: 'POST',
 		headers: {},

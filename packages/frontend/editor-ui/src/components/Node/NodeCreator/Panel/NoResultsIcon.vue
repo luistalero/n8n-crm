@@ -4,8 +4,8 @@
 		height="75px"
 		viewBox="0 0 75 75"
 		version="1.1"
-		xmlns="http://www.w3.org/2000/svg"
-		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns="https://www.w3.org/2000/svg"
+		xmlns:xlink="https://www.w3.org/1999/xlink"
 	>
 		<title>no-nodes-keyart</title>
 		<g

@@ -32,7 +32,7 @@ describe('UserUpdateRequestDto', () => {
 	it('should fail validation for a firstName with a URL', () => {
 		const invalidRequest = {
 			email: 'test@example.com',
-			firstName: 'test http://malicious.com',
+			firstName: 'test https://malicious.com',
 			lastName: 'Doe',
 			mfaCode: '123456',
 		};
@@ -61,7 +61,7 @@ describe('UserUpdateRequestDto', () => {
 		const invalidRequest = {
 			email: 'test@example.com',
 			firstName: 'John',
-			lastName: 'testing http://malicious.com',
+			lastName: 'testing https://malicious.com',
 			mfaCode: '123456',
 		};
 

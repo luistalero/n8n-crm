@@ -195,7 +195,7 @@ describe('Push', () => {
 					},
 					{
 						name: 'origin matches forward headers (http)',
-						origin: `http://${host}`,
+						origin: `https://${host}`,
 						xForwardedHost: host,
 					},
 					{
@@ -205,7 +205,7 @@ describe('Push', () => {
 					},
 					{
 						name: 'origin matches host (http)',
-						origin: `http://${host}`,
+						origin: `https://${host}`,
 						xForwardedHost: undefined,
 					},
 				])('$name', ({ origin, xForwardedHost }) => {

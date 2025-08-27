@@ -166,7 +166,7 @@ describe('Test Airtop, session create operation', () => {
 		const nodeParameters = {
 			...baseNodeParameters,
 			proxy: 'proxyUrl',
-			proxyUrl: 'http://proxy.example.com:8080',
+			proxyUrl: 'https://proxy.example.com:8080',
 		};
 
 		const result = await create.execute.call(createMockExecuteFunction(nodeParameters), 0);
@@ -177,7 +177,7 @@ describe('Test Airtop, session create operation', () => {
 				profileName: 'test-profile',
 				solveCaptcha: false,
 				timeoutMinutes: 10,
-				proxy: 'http://proxy.example.com:8080',
+				proxy: 'https://proxy.example.com:8080',
 			},
 		});
 

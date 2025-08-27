@@ -295,7 +295,7 @@ describe('useCanvasMapping', () => {
 			});
 
 			const rootStore = mockedStore(useRootStore);
-			rootStore.baseUrl = 'http://test.local/';
+			rootStore.baseUrl = 'https://test.local/';
 
 			expect(mappedNodes.value[0]?.data?.render).toEqual({
 				type: CanvasNodeRenderType.Default,
@@ -304,7 +304,7 @@ describe('useCanvasMapping', () => {
 					configuration: false,
 					trigger: true,
 					icon: {
-						src: 'http://test.local/nodes/test-node/icon.svg',
+						src: 'https://test.local/nodes/test-node/icon.svg',
 						type: 'file',
 					},
 					inputs: {

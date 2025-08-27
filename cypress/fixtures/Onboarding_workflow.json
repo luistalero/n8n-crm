@@ -492,10 +492,10 @@
               ]
             },
             "website": {
-              "value": "http://www.HubSpot.com",
+              "value": "https://www.HubSpot.com",
               "versions": [
                 {
-                  "value": "http://www.HubSpot.com",
+                  "value": "https://www.HubSpot.com",
                   "source-type": "CONTACTS_WEB",
                   "source-id": "sample-contact",
                   "source-label": null,

@@ -205,7 +205,7 @@ export class HttpRequestV2 implements INodeType {
 					name: 'url',
 					type: 'string',
 					default: '',
-					placeholder: 'http://example.com/index.html',
+					placeholder: 'https://example.com/index.html',
 					description: 'The URL to make the request to',
 					required: true,
 				},
@@ -379,7 +379,7 @@ export class HttpRequestV2 implements INodeType {
 							name: 'proxy',
 							type: 'string',
 							default: '',
-							placeholder: 'http://myproxy:3128',
+							placeholder: 'https://myproxy:3128',
 							description: 'HTTP proxy to use',
 						},
 						{

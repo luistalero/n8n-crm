@@ -13,7 +13,7 @@ export const DEFAULT_HEADERS: Headers = {
 /**
  * Format error response types to regular strings for displaying to clients.
  *
- * Reference: http://tools.ietf.org/html/rfc6749#section-4.1.2.1
+ * Reference: https://tools.ietf.org/html/rfc6749#section-4.1.2.1
  */
 export const ERROR_RESPONSES: Record<string, string> = {
 	invalid_request: [

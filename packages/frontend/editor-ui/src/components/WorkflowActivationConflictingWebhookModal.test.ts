@@ -19,8 +19,8 @@ vi.mock('@/stores/ui.store', () => {
 vi.mock('@n8n/stores/useRootStore', () => {
 	return {
 		useRootStore: vi.fn(() => ({
-			webhookUrl: 'http://webhook-base',
-			urlBaseEditor: 'http://editor-base',
+			webhookUrl: 'https://webhook-base',
+			urlBaseEditor: 'https://editor-base',
 		})),
 	};
 });
@@ -67,7 +67,7 @@ describe('WorkflowActivationConflictingWebhookModal', () => {
 			'and activate this one, or adjust the following URL path in either workflow:',
 		);
 		expect(wrapper.getByTestId('conflicting-webhook-path')).toHaveTextContent(
-			'http://webhook-base/webhook-path',
+			'https://webhook-base/webhook-path',
 		);
 	});
 
@@ -97,7 +97,7 @@ describe('WorkflowActivationConflictingWebhookModal', () => {
 			'and activate this one, or adjust the following URL path in either workflow:',
 		);
 		expect(wrapper.getByTestId('conflicting-webhook-path')).toHaveTextContent(
-			'http://webhook-base/form-path',
+			'https://webhook-base/form-path',
 		);
 	});
 
@@ -127,7 +127,7 @@ describe('WorkflowActivationConflictingWebhookModal', () => {
 			'and activate this one, or insert a new Chat Trigger node in either workflow:',
 		);
 		expect(wrapper.getByTestId('conflicting-webhook-path')).toHaveTextContent(
-			'http://webhook-base/123/chat',
+			'https://webhook-base/123/chat',
 		);
 	});
 
@@ -157,7 +157,7 @@ describe('WorkflowActivationConflictingWebhookModal', () => {
 			'and activate this one, or insert a new trigger node of the same type in either workflow:',
 		);
 		expect(wrapper.getByTestId('conflicting-webhook-path')).toHaveTextContent(
-			'http://webhook-base/123/webhook',
+			'https://webhook-base/123/webhook',
 		);
 	});
 });

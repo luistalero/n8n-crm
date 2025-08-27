@@ -156,7 +156,7 @@ export class GraphQL implements INodeType {
 				name: 'endpoint',
 				type: 'string',
 				default: '',
-				placeholder: 'http://example.com/graphql',
+				placeholder: 'https://example.com/graphql',
 				description: 'The GraphQL endpoint',
 				required: true,
 			},

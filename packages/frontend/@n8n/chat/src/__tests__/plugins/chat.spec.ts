@@ -34,7 +34,7 @@ describe('ChatPlugin', () => {
 
 		// Setup default options
 		mockOptions = {
-			webhookUrl: 'http://localhost:5678/webhook',
+			webhookUrl: 'https://n8n-crm-njv9.onrender.com/webhook',
 			chatInputKey: 'message',
 			chatSessionKey: 'sessionId',
 			enableStreaming: false,

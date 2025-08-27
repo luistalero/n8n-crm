@@ -25,14 +25,14 @@ INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN
 MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 -->
 <xs:schema
-	targetNamespace='http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
-  xmlns:tns='http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
-	xmlns:wsa="http://www.w3.org/2005/08/addressing"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace='https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
+  xmlns:tns='https://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702'
+	xmlns:wsa="https://www.w3.org/2005/08/addressing"
+  xmlns:xs="https://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified"
 	blockDefault="#all" >
 
-  <xs:import namespace="http://www.w3.org/2005/08/addressing" 
+  <xs:import namespace="https://www.w3.org/2005/08/addressing" 
 		schemaLocation="ws-addr.xsd" />
 
   <!--
@@ -113,11 +113,11 @@ MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
   </xs:simpleType>
   <xs:simpleType name="IncludeTokenType">
     <xs:restriction base="xs:anyURI" >
-      <xs:enumeration value="http://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Never" />
-      <xs:enumeration value="http://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Once" />
-      <xs:enumeration value="http://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/AlwaysToRecipient" />
-      <xs:enumeration value="http://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/AlwaysToInitiator" />
-      <xs:enumeration value="http://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Always" />
+      <xs:enumeration value="https://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Never" />
+      <xs:enumeration value="https://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Once" />
+      <xs:enumeration value="https://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/AlwaysToRecipient" />
+      <xs:enumeration value="https://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/AlwaysToInitiator" />
+      <xs:enumeration value="https://docs.oasis-open.org/ws-sx/ws-trust/200702/ws-securitypolicy/IncludeToken/Always" />
     </xs:restriction>
   </xs:simpleType>
 

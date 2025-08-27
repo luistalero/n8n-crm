@@ -15,7 +15,7 @@ export class VerticaApi implements ICredentialType {
 	httpRequestNode = {
 		name: 'Vertica',
 		docsUrl: 'vertica',
-		apiBaseUrlPlaceholder: 'http://<server>:<port>/v1/',
+		apiBaseUrlPlaceholder: 'https://<server>:<port>/v1/',
 	};
 
 	properties: INodeProperties[] = [
